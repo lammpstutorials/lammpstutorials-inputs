@@ -21,5 +21,6 @@ docs/sphinx/build
 !level3/reactive-silicon-dioxide/RelaxSilica/log.lammps
 !level3/reactive-silicon-dioxide/RelaxSilica/dump.lammpstrj
 !level3/reactive-silicon-dioxide/Deform/dump.lammpstrj
+!level3/reactive-silicon-dioxide/Deform/log.lammps
 
 **/untitled.*.ppm

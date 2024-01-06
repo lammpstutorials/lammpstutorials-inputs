@@ -20,5 +20,6 @@ docs/sphinx/build
 !level2/nanosheared-electrolyte/minimization/log.lammps
 !level3/reactive-silicon-dioxide/RelaxSilica/log.lammps
 !level3/reactive-silicon-dioxide/RelaxSilica/dump.lammpstrj
+!level3/reactive-silicon-dioxide/Deform/dump.lammpstrj
 
 **/untitled.*.ppm

@@ -12,9 +12,9 @@ proc vmdrestoremymaterials {} {
     }
   }
   material change ambient Opaque 0.000000
-  material change diffuse Opaque 0.580000
-  material change specular Opaque 0.310000
-  material change shininess Opaque 0.390000
+  material change diffuse Opaque 0.560000
+  material change specular Opaque 0.120000
+  material change shininess Opaque 0.290000
   material change mirror Opaque 0.000000
   material change opacity Opaque 1.000000
   material change outline Opaque 0.000000
@@ -376,6 +376,7 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
+mol showrep top 0 0
 mol representation VDW 0.200000 62.000000
 mol color Charge
 mol selection {type 1 2}
@@ -410,6 +411,7 @@ mol clipplane center 5 1 top {0.0 0.0 0.0}
 mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
+mol showrep top 1 0
 mol representation VDW 1.200000 62.000000
 mol color Charge
 mol selection {type 1}
@@ -549,6 +551,7 @@ mol clipplane center 5 5 top {0.0 0.0 0.0}
 mol clipplane color  5 5 top {0.5 0.5 0.5 }
 mol clipplane normal 5 5 top {0.0 0.0 1.0}
 mol clipplane status 5 5 top {0}
+mol showrep top 5 0
 mol representation VDW 0.800000 62.000000
 mol color Charge
 mol selection {type 3}
@@ -583,8 +586,215 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
+mol showrep top 6 0
+mol representation VDW 1.000000 62.000000
+mol color Charge
+mol selection {type 1}
+mol material Opaque
+mol addrep top
+mol selupdate 7 top 0
+mol colupdate 7 top 0
+mol scaleminmax top 7 -1.082890 2.104070
+mol smoothrep top 7 0
+mol drawframes top 7 {now}
+mol clipplane center 0 7 top {0.0 0.0 0.0}
+mol clipplane color  0 7 top {0.5 0.5 0.5 }
+mol clipplane normal 0 7 top {0.0 0.0 1.0}
+mol clipplane status 0 7 top {0}
+mol clipplane center 1 7 top {0.0 0.0 0.0}
+mol clipplane color  1 7 top {0.5 0.5 0.5 }
+mol clipplane normal 1 7 top {0.0 0.0 1.0}
+mol clipplane status 1 7 top {0}
+mol clipplane center 2 7 top {0.0 0.0 0.0}
+mol clipplane color  2 7 top {0.5 0.5 0.5 }
+mol clipplane normal 2 7 top {0.0 0.0 1.0}
+mol clipplane status 2 7 top {0}
+mol clipplane center 3 7 top {0.0 0.0 0.0}
+mol clipplane color  3 7 top {0.5 0.5 0.5 }
+mol clipplane normal 3 7 top {0.0 0.0 1.0}
+mol clipplane status 3 7 top {0}
+mol clipplane center 4 7 top {0.0 0.0 0.0}
+mol clipplane color  4 7 top {0.5 0.5 0.5 }
+mol clipplane normal 4 7 top {0.0 0.0 1.0}
+mol clipplane status 4 7 top {0}
+mol clipplane center 5 7 top {0.0 0.0 0.0}
+mol clipplane color  5 7 top {0.5 0.5 0.5 }
+mol clipplane normal 5 7 top {0.0 0.0 1.0}
+mol clipplane status 5 7 top {0}
+mol showrep top 7 0
+mol representation VDW 0.800000 62.000000
+mol color Charge
+mol selection {type 2}
+mol material Opaque
+mol addrep top
+mol selupdate 8 top 0
+mol colupdate 8 top 0
+mol scaleminmax top 8 -1.082890 2.104070
+mol smoothrep top 8 0
+mol drawframes top 8 {now}
+mol clipplane center 0 8 top {0.0 0.0 0.0}
+mol clipplane color  0 8 top {0.5 0.5 0.5 }
+mol clipplane normal 0 8 top {0.0 0.0 1.0}
+mol clipplane status 0 8 top {0}
+mol clipplane center 1 8 top {0.0 0.0 0.0}
+mol clipplane color  1 8 top {0.5 0.5 0.5 }
+mol clipplane normal 1 8 top {0.0 0.0 1.0}
+mol clipplane status 1 8 top {0}
+mol clipplane center 2 8 top {0.0 0.0 0.0}
+mol clipplane color  2 8 top {0.5 0.5 0.5 }
+mol clipplane normal 2 8 top {0.0 0.0 1.0}
+mol clipplane status 2 8 top {0}
+mol clipplane center 3 8 top {0.0 0.0 0.0}
+mol clipplane color  3 8 top {0.5 0.5 0.5 }
+mol clipplane normal 3 8 top {0.0 0.0 1.0}
+mol clipplane status 3 8 top {0}
+mol clipplane center 4 8 top {0.0 0.0 0.0}
+mol clipplane color  4 8 top {0.5 0.5 0.5 }
+mol clipplane normal 4 8 top {0.0 0.0 1.0}
+mol clipplane status 4 8 top {0}
+mol clipplane center 5 8 top {0.0 0.0 0.0}
+mol clipplane color  5 8 top {0.5 0.5 0.5 }
+mol clipplane normal 5 8 top {0.0 0.0 1.0}
+mol clipplane status 5 8 top {0}
+mol showrep top 8 0
+mol representation VDW 1.000000 62.000000
+mol color Type
+mol selection {type 1}
+mol material Opaque
+mol addrep top
+mol selupdate 9 top 0
+mol colupdate 9 top 0
+mol scaleminmax top 9 0.000000 0.000000
+mol smoothrep top 9 0
+mol drawframes top 9 {now}
+mol clipplane center 0 9 top {0.0 0.0 0.0}
+mol clipplane color  0 9 top {0.5 0.5 0.5 }
+mol clipplane normal 0 9 top {0.0 0.0 1.0}
+mol clipplane status 0 9 top {0}
+mol clipplane center 1 9 top {0.0 0.0 0.0}
+mol clipplane color  1 9 top {0.5 0.5 0.5 }
+mol clipplane normal 1 9 top {0.0 0.0 1.0}
+mol clipplane status 1 9 top {0}
+mol clipplane center 2 9 top {0.0 0.0 0.0}
+mol clipplane color  2 9 top {0.5 0.5 0.5 }
+mol clipplane normal 2 9 top {0.0 0.0 1.0}
+mol clipplane status 2 9 top {0}
+mol clipplane center 3 9 top {0.0 0.0 0.0}
+mol clipplane color  3 9 top {0.5 0.5 0.5 }
+mol clipplane normal 3 9 top {0.0 0.0 1.0}
+mol clipplane status 3 9 top {0}
+mol clipplane center 4 9 top {0.0 0.0 0.0}
+mol clipplane color  4 9 top {0.5 0.5 0.5 }
+mol clipplane normal 4 9 top {0.0 0.0 1.0}
+mol clipplane status 4 9 top {0}
+mol clipplane center 5 9 top {0.0 0.0 0.0}
+mol clipplane color  5 9 top {0.5 0.5 0.5 }
+mol clipplane normal 5 9 top {0.0 0.0 1.0}
+mol clipplane status 5 9 top {0}
+mol representation VDW 0.800000 62.000000
+mol color Type
+mol selection {type 2}
+mol material Opaque
+mol addrep top
+mol selupdate 10 top 0
+mol colupdate 10 top 0
+mol scaleminmax top 10 0.000000 0.000000
+mol smoothrep top 10 0
+mol drawframes top 10 {now}
+mol clipplane center 0 10 top {0.0 0.0 0.0}
+mol clipplane color  0 10 top {0.5 0.5 0.5 }
+mol clipplane normal 0 10 top {0.0 0.0 1.0}
+mol clipplane status 0 10 top {0}
+mol clipplane center 1 10 top {0.0 0.0 0.0}
+mol clipplane color  1 10 top {0.5 0.5 0.5 }
+mol clipplane normal 1 10 top {0.0 0.0 1.0}
+mol clipplane status 1 10 top {0}
+mol clipplane center 2 10 top {0.0 0.0 0.0}
+mol clipplane color  2 10 top {0.5 0.5 0.5 }
+mol clipplane normal 2 10 top {0.0 0.0 1.0}
+mol clipplane status 2 10 top {0}
+mol clipplane center 3 10 top {0.0 0.0 0.0}
+mol clipplane color  3 10 top {0.5 0.5 0.5 }
+mol clipplane normal 3 10 top {0.0 0.0 1.0}
+mol clipplane status 3 10 top {0}
+mol clipplane center 4 10 top {0.0 0.0 0.0}
+mol clipplane color  4 10 top {0.5 0.5 0.5 }
+mol clipplane normal 4 10 top {0.0 0.0 1.0}
+mol clipplane status 4 10 top {0}
+mol clipplane center 5 10 top {0.0 0.0 0.0}
+mol clipplane color  5 10 top {0.5 0.5 0.5 }
+mol clipplane normal 5 10 top {0.0 0.0 1.0}
+mol clipplane status 5 10 top {0}
+mol representation VDW 0.800000 62.000000
+mol color Type
+mol selection {type 3}
+mol material Opaque
+mol addrep top
+mol selupdate 11 top 0
+mol colupdate 11 top 0
+mol scaleminmax top 11 0.000000 0.000000
+mol smoothrep top 11 0
+mol drawframes top 11 {now}
+mol clipplane center 0 11 top {0.0 0.0 0.0}
+mol clipplane color  0 11 top {0.5 0.5 0.5 }
+mol clipplane normal 0 11 top {0.0 0.0 1.0}
+mol clipplane status 0 11 top {0}
+mol clipplane center 1 11 top {0.0 0.0 0.0}
+mol clipplane color  1 11 top {0.5 0.5 0.5 }
+mol clipplane normal 1 11 top {0.0 0.0 1.0}
+mol clipplane status 1 11 top {0}
+mol clipplane center 2 11 top {0.0 0.0 0.0}
+mol clipplane color  2 11 top {0.5 0.5 0.5 }
+mol clipplane normal 2 11 top {0.0 0.0 1.0}
+mol clipplane status 2 11 top {0}
+mol clipplane center 3 11 top {0.0 0.0 0.0}
+mol clipplane color  3 11 top {0.5 0.5 0.5 }
+mol clipplane normal 3 11 top {0.0 0.0 1.0}
+mol clipplane status 3 11 top {0}
+mol clipplane center 4 11 top {0.0 0.0 0.0}
+mol clipplane color  4 11 top {0.5 0.5 0.5 }
+mol clipplane normal 4 11 top {0.0 0.0 1.0}
+mol clipplane status 4 11 top {0}
+mol clipplane center 5 11 top {0.0 0.0 0.0}
+mol clipplane color  5 11 top {0.5 0.5 0.5 }
+mol clipplane normal 5 11 top {0.0 0.0 1.0}
+mol clipplane status 5 11 top {0}
+mol representation VDW 0.400000 62.000000
+mol color Type
+mol selection {type 4}
+mol material Opaque
+mol addrep top
+mol selupdate 12 top 0
+mol colupdate 12 top 0
+mol scaleminmax top 12 0.000000 0.000000
+mol smoothrep top 12 0
+mol drawframes top 12 {now}
+mol clipplane center 0 12 top {0.0 0.0 0.0}
+mol clipplane color  0 12 top {0.5 0.5 0.5 }
+mol clipplane normal 0 12 top {0.0 0.0 1.0}
+mol clipplane status 0 12 top {0}
+mol clipplane center 1 12 top {0.0 0.0 0.0}
+mol clipplane color  1 12 top {0.5 0.5 0.5 }
+mol clipplane normal 1 12 top {0.0 0.0 1.0}
+mol clipplane status 1 12 top {0}
+mol clipplane center 2 12 top {0.0 0.0 0.0}
+mol clipplane color  2 12 top {0.5 0.5 0.5 }
+mol clipplane normal 2 12 top {0.0 0.0 1.0}
+mol clipplane status 2 12 top {0}
+mol clipplane center 3 12 top {0.0 0.0 0.0}
+mol clipplane color  3 12 top {0.5 0.5 0.5 }
+mol clipplane normal 3 12 top {0.0 0.0 1.0}
+mol clipplane status 3 12 top {0}
+mol clipplane center 4 12 top {0.0 0.0 0.0}
+mol clipplane color  4 12 top {0.5 0.5 0.5 }
+mol clipplane normal 4 12 top {0.0 0.0 1.0}
+mol clipplane status 4 12 top {0}
+mol clipplane center 5 12 top {0.0 0.0 0.0}
+mol clipplane color  5 12 top {0.5 0.5 0.5 }
+mol clipplane normal 5 12 top {0.0 0.0 1.0}
+mol clipplane status 5 12 top {0}
 mol rename top dump.lammpstrj
-set viewpoints([molinfo top]) {{{1 0 0 -10.0561} {0 1 0 -10.3823} {0 0 1 -10.1705} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0160869 0 0 0} {0 0.0160869 0 0} {0 0 0.0160869 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 -9.9465} {0 1 0 -10.3359} {0 0 1 -10.3189} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0193434 0 0 0} {0 0.0193434 0 0} {0 0 0.0193434 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 1
@@ -635,7 +845,7 @@ color scale colors CET_D11 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
 color scale colors CET_D12 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
 color scale colors turbo {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
 color scale colors CET_R2 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
-  color scale method RGB
+  color scale method CET_R2
   set colorcmds {
     {color Display {Background} white}
     {color Display {BackgroundTop} black}
@@ -649,10 +859,10 @@ color scale colors CET_R2 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
     {color Name {4} lime}
     {color Type {LP} green}
     {color Type {DRUD} pink}
-    {color Type {1} pink}
-    {color Type {2} cyan}
-    {color Type {3} purple}
-    {color Type {4} lime}
+    {color Type {1} yellow}
+    {color Type {2} red}
+    {color Type {3} cyan}
+    {color Type {4} white}
     {color Element {X} cyan}
     {color Element {Ac} ochre}
     {color Element {Ag} ochre}
@@ -782,6 +992,7 @@ color scale colors CET_R2 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
   color change rgb 6 0.6000000238418579 0.6000000238418579 0.6000000238418579
   color change rgb 7 0.0 1.0 0.0
   color change rgb 9 1.0 0.6000000238418579 0.6000000238418579
+  color change rgb 10 0.0 1.0 1.0
   color change rgb 11 0.6499999761581421 0.0 0.6499999761581421
   color change rgb 12 0.5 0.8999999761581421 0.4000000059604645
   color change rgb 13 0.8999999761581421 0.4000000059604645 0.699999988079071

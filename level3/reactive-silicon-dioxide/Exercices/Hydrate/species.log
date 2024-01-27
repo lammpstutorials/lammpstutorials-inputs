@@ -1,0 +1,846 @@
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+          5          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         10          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         15          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         20          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         25          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         30          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         35          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         40          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         45          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         50          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         55          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         60          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         65          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         70          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         75          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         80          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         85          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         90          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+         95          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        100          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        105          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        110          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        115          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        120          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        125          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        130          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        135          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        140          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        145          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        150          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        155          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        160          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        165          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        170          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        175          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        180          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        185          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        190          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        195          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        200          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        205          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        210          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        215          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        220          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        225          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        230          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        235          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        240          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        245          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        250          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        255          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        260          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        265          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        270          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        275          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        280          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        285          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        290          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        295          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        300          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        305          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        310          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        315          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        320          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        325          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        330          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        335          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        340          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        345          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        350          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        355          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        360          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        365          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        370          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        375          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        380          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        385          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        390          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        395          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        400          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        405          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        410          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        415          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        420          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        425          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        430          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        435          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        440          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        445          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        450          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        455          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        460          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        465          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        470          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        475          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        480          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        485          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        490          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        495          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        500          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        505          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        510          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        515          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        520          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        525          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        530          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        535          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        540          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        545          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        550          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        555          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        560          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        565          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        570          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        575          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        580          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        585          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        590          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        595          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        600          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        605          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        610          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        615          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        620          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        625          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O383H18         OH2
+        630          22           2           1          21
+#  Timestep    No_Moles    No_Specs Si192O383H18         OH2
+        635          22           2           1          21
+#  Timestep    No_Moles    No_Specs Si192O383H18         OH2
+        640          22           2           1          21
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        645          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        650          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        655          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        660          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        665          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        670          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        675          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        680          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        685          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        690          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        695          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        700          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        705          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        710          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        715          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        720          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        725          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        730          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        735          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        740          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        745          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        750          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        755          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        760          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        765          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        770          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        775          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        780          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        785          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        790          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        795          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        800          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        805          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        810          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        815          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        820          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        825          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        830          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        835          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        840          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        845          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        850          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        855          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        860          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        865          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        870          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        875          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        880          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        885          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        890          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        895          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        900          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        905          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        910          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        915          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        920          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        925          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        930          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        935          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        940          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        945          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+        950          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        955          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        960          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        965          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        970          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        975          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        980          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        985          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        990          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+        995          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1000          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1005          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1010          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1015          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1020          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1025          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1030          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1035          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1040          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1045          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1050          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1055          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1060          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1065          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1070          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1075          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1080          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1085          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1090          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1095          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1100          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1105          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1110          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1115          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1120          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1125          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1130          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1135          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1140          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1145          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1150          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1155          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1160          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1165          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1170          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1175          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1180          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1185          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1190          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1195          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1200          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1205          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1210          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1215          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1220          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1225          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1230          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1235          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1240          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1245          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1250          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1255          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1260          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1265          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1270          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1275          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1280          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1285          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1290          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1295          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1300          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1305          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1310          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1315          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1320          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1325          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1330          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1335          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1340          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1345          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1350          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1355          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1360          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1365          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1370          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1375          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1380          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1385          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1390          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1395          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1400          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1405          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1410          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1415          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1420          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O387H26         OH2
+       1425          18           2           1          17
+#  Timestep    No_Moles    No_Specs Si192O387H26         OH2
+       1430          18           2           1          17
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1435          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1440          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1445          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1450          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1455          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1460          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1465          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1470          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1475          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1480          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1485          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1490          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1495          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1500          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1505          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1510          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1515          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1520          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1525          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1530          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1535          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1540          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1545          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1550          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O384H21         OH2          OH
+       1555          21           3           1          19           1
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1560          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1565          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1570          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1575          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1580          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1585          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1590          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1595          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1600          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1605          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1610          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1615          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1620          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1625          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1630          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1635          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1640          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1645          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1650          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1655          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1660          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1665          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1670          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1675          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1680          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1685          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1690          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1695          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1700          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1705          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1710          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1715          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1720          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1725          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1730          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1735          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1740          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1745          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1750          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1755          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1760          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1765          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1770          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1775          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1780          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1785          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1790          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1795          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1800          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1805          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1810          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1815          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1820          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1825          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1830          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1835          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1840          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1845          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1850          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1855          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1860          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1865          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1870          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1875          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1880          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1885          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1890          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1895          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1900          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1905          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1910          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1915          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1920          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       1925          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1930          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1935          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1940          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1945          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1950          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1955          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1960          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1965          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1970          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1975          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1980          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1985          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1990          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       1995          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2000          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2005          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2010          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2015          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2020          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2025          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       2030          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2035          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2040          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2045          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O385H22         OH2
+       2050          20           2           1          19
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       2055          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       2060          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       2065          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O386H24         OH2
+       2070          19           2           1          18
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2075          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2080          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2085          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2090          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2095          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2100          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2105          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2110          21           2           1          20
+#  Timestep    No_Moles    No_Specs Si192O384H20         OH2
+       2115          21           2           1          20

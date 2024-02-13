@@ -351,7 +351,7 @@ display dof_fnumber 64.000000
 display dof_focaldist 0.700000
 mol new dump.lammpstrj type lammpstrj first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
-mol representation VDW 0.500000 37.000000
+mol representation VDW 0.500000 47.000000
 mol color Name
 mol selection {type 1}
 mol material perso1
@@ -385,7 +385,7 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
-mol representation VDW 1.300000 37.000000
+mol representation VDW 1.300000 47.000000
 mol color Name
 mol selection {type 2}
 mol material perso1
@@ -420,7 +420,7 @@ mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
 mol rename top dump.lammpstrj
-set viewpoints([molinfo top]) {{{1 0 0 0.424922} {0 1 0 0.145386} {0 0 1 -0.39438} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}} {{0.0149706 0 0 0} {0 0.0149706 0 0} {0 0 0.0149706 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 0.424922} {0 1 0 0.145386} {0 0 1 -0.39438} {0 0 0 1}} {{1 0 0 0} {0 1.00583e-07 1 0} {0 -1 1.00583e-07 0} {0 0 0 1}} {{0.0149706 0 0 0} {0 0.0149706 0 0} {0 0 0.0149706 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 1
@@ -605,7 +605,7 @@ color scale colors CET_R2 {0.0 0.0 0.0} {0.0 0.0 0.0} {0.0 0.0 0.0}
   foreach colcmd $colorcmds {
     set val [catch {eval $colcmd}]
   }
-  color change rgb 0 0.11504295468330383 0.42463061213493347 0.8905472755432129
+  color change rgb 0 0.22072890400886536 0.5585182905197144 0.8905472755432129
   color change rgb 2 0.3499999940395355 0.3499999940395355 0.3499999940395355
   color change rgb 3 1.0 0.5 0.0
   color change rgb 4 1.0 1.0 0.0

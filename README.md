@@ -7,7 +7,7 @@ The files include:
 
 - LAMMPS data files, input files, and parameter files,
 - the detailed solutions to the exercises,
-- Python scripts for generating structures and analysing data.
+- Python scripts for generating structures and analyzing data.
 
 ### Main repository ###
 

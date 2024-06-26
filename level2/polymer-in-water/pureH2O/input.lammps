@@ -43,7 +43,7 @@ extra/special/per/atom 14
 include ../PARM.lammps
 
 molecule h2omol H2O-SPCFw.mol
-create_atoms 0 random 1050 860477 NULL mol h2omol 454756 overlap 1.0 maxtry 50
+create_atoms 0 random 2050 160477 NULL mol h2omol 254756 overlap 1.0 maxtry 50
 group H2O type 8 9
 minimize 1.0e-4 1.0e-6 100 1000
 reset_timestep 0

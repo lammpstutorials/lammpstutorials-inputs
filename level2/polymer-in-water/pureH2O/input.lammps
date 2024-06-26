@@ -59,8 +59,8 @@ variable myoxy equal count(H2O)/3 # divide by 3 to get the number of molecule, n
 variable mydensity equal ${myoxy}/v_myvol
 fix myat3 all ave/time 10 10 100 v_mydensity file density.dat
 
-timestep 1.0
+timestep 0.5
 thermo 1000
-run 20000
+run 40000
 
 write_data H2O.data

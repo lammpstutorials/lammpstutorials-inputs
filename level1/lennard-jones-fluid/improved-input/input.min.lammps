@@ -46,7 +46,7 @@ pair_coeff 2 2 0.5 3.0
 
 # 4) Visualization
 thermo 10
-thermo_style custom step temp pe ke etotal press
+thermo_style custom step etotal press
 dump mydmp all atom 10 dump.min.lammpstrj
 
 # 5) Run

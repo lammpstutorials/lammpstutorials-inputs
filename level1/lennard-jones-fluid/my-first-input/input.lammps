@@ -47,7 +47,7 @@ thermo 10
 thermo_style custom step etotal press
 
 # 5) Run
-minimize 1.0e-4 1.0e-6 1000 10000
+minimize 1.0e-6 1.0e-6 1000 10000
 
 # PART B - MOLECULAR DYNAMICS
 # 4) Visualization

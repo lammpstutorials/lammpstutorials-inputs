@@ -65,8 +65,8 @@ Finding 1-2 1-3 1-4 neighbors ...
      6 = max # of 1-3 neighbors
     18 = max # of 1-4 neighbors
     18 = max # of special neighbors
-  special bonds CPU = 0.002 seconds
-  read_data CPU = 0.062 seconds
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.035 seconds
 include parm.lammps
 # LAMMPS input script by Simon Gravelle
 # This input is part of a tutorial from https://lammpstutorials.github.io
@@ -171,7 +171,7 @@ Finding 1-2 1-3 1-4 neighbors ...
      6 = max # of 1-3 neighbors
     18 = max # of 1-4 neighbors
     18 = max # of special neighbors
-  special bonds CPU = 0.002 seconds
+  special bonds CPU = 0.001 seconds
 velocity carbon_mid create ${T} 48455 mom yes rot yes
 velocity carbon_mid create 300 48455 mom yes rot yes
 fix mynve all nve
@@ -188,7 +188,7 @@ velocity carbon_bot set 0 0 0
 
 variable L equal xcm(carbon_top,z)-xcm(carbon_bot,z)
 fix at1 all ave/time 10 10 100 v_L file cnt_length.dat
-fix at2 all ave/time 10 10 100 f_mysf1[1] f_mysf2[1] file edge_force.dat
+fix at2 all ave/time 10 10 100 f_mysf1[3] f_mysf2[3] file edge_force.dat
 dump mydmp all atom 1000 dump.lammpstrj
 
 fix at3 all ave/time 10 10 100 c_Tmid file temperature_middle_group.dat
@@ -256,21 +256,21 @@ data:
   - [4900, 300.908485252652, 582.762109394734, 2595.864585543, 3778.68693867159, -231.876963001268, ]
   - [5000, 302.598319433814, 584.043627782584, 2593.68757675417, 3781.16125125163, -164.696013688354, ]
 ...
-Loop time of 22.0295 on 1 procs for 5000 steps with 690 atoms
+Loop time of 11.8941 on 1 procs for 5000 steps with 690 atoms
 
-Performance: 19.610 ns/day, 1.224 hours/ns, 226.968 timesteps/s, 156.608 katom-step/s
+Performance: 36.320 ns/day, 0.661 hours/ns, 420.376 timesteps/s, 290.059 katom-step/s
 100.0% CPU use with 1 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 11.415     | 11.415     | 11.415     |   0.0 | 51.82
-Bond    | 10.443     | 10.443     | 10.443     |   0.0 | 47.40
-Neigh   | 0.0052664  | 0.0052664  | 0.0052664  |   0.0 |  0.02
-Comm    | 0.0013743  | 0.0013743  | 0.0013743  |   0.0 |  0.01
-Output  | 0.0071436  | 0.0071436  | 0.0071436  |   0.0 |  0.03
-Modify  | 0.13406    | 0.13406    | 0.13406    |   0.0 |  0.61
-Other   |            | 0.02431    |            |       |  0.11
+Pair    | 5.4616     | 5.4616     | 5.4616     |   0.0 | 45.92
+Bond    | 6.3418     | 6.3418     | 6.3418     |   0.0 | 53.32
+Neigh   | 0.0028613  | 0.0028613  | 0.0028613  |   0.0 |  0.02
+Comm    | 0.00070593 | 0.00070593 | 0.00070593 |   0.0 |  0.01
+Output  | 0.0037534  | 0.0037534  | 0.0037534  |   0.0 |  0.03
+Modify  | 0.070901   | 0.070901   | 0.070901   |   0.0 |  0.60
+Other   |            | 0.01247    |            |       |  0.10
 
 Nlocal:            690 ave         690 max         690 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
@@ -396,21 +396,21 @@ data:
   - [14900, 313.355664293281, 467.524460306476, 14217.427045204, 15309.8334397415, -6823.01340109076, ]
   - [15000, 308.322539933771, 498.936079803529, 14422.9318262794, 15536.7129753602, -6805.82456127638, ]
 ...
-Loop time of 42.8498 on 1 procs for 10000 steps with 690 atoms
+Loop time of 23.3412 on 1 procs for 10000 steps with 690 atoms
 
-Performance: 20.163 ns/day, 1.190 hours/ns, 233.373 timesteps/s, 161.028 katom-step/s
+Performance: 37.016 ns/day, 0.648 hours/ns, 428.427 timesteps/s, 295.614 katom-step/s
 100.0% CPU use with 1 MPI tasks x no OpenMP threads
 
 MPI task timing breakdown:
 Section |  min time  |  avg time  |  max time  |%varavg| %total
 ---------------------------------------------------------------
-Pair    | 21.872     | 21.872     | 21.872     |   0.0 | 51.04
-Bond    | 20.62      | 20.62      | 20.62      |   0.0 | 48.12
-Neigh   | 0.02603    | 0.02603    | 0.02603    |   0.0 |  0.06
-Comm    | 0.0041091  | 0.0041091  | 0.0041091  |   0.0 |  0.01
-Output  | 0.013056   | 0.013056   | 0.013056   |   0.0 |  0.03
-Modify  | 0.2669     | 0.2669     | 0.2669     |   0.0 |  0.62
-Other   |            | 0.04823    |            |       |  0.11
+Pair    | 10.605     | 10.605     | 10.605     |   0.0 | 45.43
+Bond    | 12.546     | 12.546     | 12.546     |   0.0 | 53.75
+Neigh   | 0.014475   | 0.014475   | 0.014475   |   0.0 |  0.06
+Comm    | 0.0022275  | 0.0022275  | 0.0022275  |   0.0 |  0.01
+Output  | 0.0073593  | 0.0073593  | 0.0073593  |   0.0 |  0.03
+Modify  | 0.14176    | 0.14176    | 0.14176    |   0.0 |  0.61
+Other   |            | 0.02477    |            |       |  0.11
 
 Nlocal:            690 ave         690 max         690 min
 Histogram: 1 0 0 0 0 0 0 0 0 0
@@ -424,4 +424,4 @@ Ave neighs/atom = 128.86232
 Ave special neighs/atom = 16.901449
 Neighbor list builds = 5
 Dangerous builds = 0
-Total wall time: 0:01:04
+Total wall time: 0:00:35

@@ -1,3 +1,12 @@
+<!--
+WARNING: DO NOT MODIFY DIRECTLY THE README.md!
+This README.md file was assembled using the sed command from the files listed in
+"files.txt". See the script in "generateREADME.sh". To modify the content of 
+the  README.md, modify the files listed in "files.txt", or add a new file to the
+list in "files.txt".
+-->
+
+
 ## Input files for LAMMPS tutorials
 
 LAMMPS and Python input files corresponding
@@ -14,21 +23,31 @@ The files include:
 Find [here](https://github.com/lammpstutorials/lammpstutorials.github.io)
 the main repository for LAMMPS tutorial.
 
-### About me & Contact
 
-I am a computer physicist in soft matter and fluids at interfaces. You can 
-find more information on my [personal webpage](https://simongravelle.github.io/).
 
-See the [contact page](https://lammpstutorials.github.io/sphinx/build/html/non-tutorials/contact-me.html). 
-You can report issues here on Github, or send me an [email](https://simongravelle.github.io/). Your feedback is always appreciated.
+## Authors
 
-### License & Acknowledgments
+### Project creator
 
-All the LAMMPS inputs/data/parameter files and Python scripts are released under the 
-GNU general public license v3.0.
+- [Simon Gravelle](https://github.com/simongravelle),
+  Univ. Grenoble Alpes, CNRS, LIPhy, 38000 Grenoble, France
 
-This project has received funding from the European
-Union's Horizon 2020 research and innovation programme
-under the Marie Skłodowska-Curie grant agreement No 101065060.
+### Contributors
 
-![Acknowledgments-logos](https://raw.githubusercontent.com/simongravelle/credits/1c44b5ae76a33c5bbbd33a54243365c6abdc24b2/cnrs-uga-liphy-msca.png)
+- [Jacob R. Gissinger](https://www.stevens.edu/profile/jgissing),
+  Stevens Institute of Technology, Hoboken, NJ 07030, USA
+- [Axel Kohlmeyer](https://sites.google.com/site/akohlmey),
+  Institute for Computational Molecular Science, Temple University, Philadelphia,
+  PA 19122, USA
+
+
+
+## Acknowledgements
+
+- Simon Gravelle acknowledges funding from the European Union's Horizon 2020
+  research and innovation programme under the Marie Skłodowska-Curie grant
+  agreement No 101065060.
+- Axel Kohlmeyer acknowledges financial support by Sandia National Laboratories
+  under POs 2149742 and 2407526.
+
+

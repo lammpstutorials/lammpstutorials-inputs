@@ -1,4 +1,4 @@
-## Input files for LAMMPS tutorials
+## Input files for LAMMPS tutorials [![DOI](https://zenodo.org/badge/739720878.svg)](https://zenodo.org/doi/10.5281/zenodo.13341091)
 
 LAMMPS and Python input files corresponding
 associated with [lammps tutorials](https://lammpstutorials.github.io/).

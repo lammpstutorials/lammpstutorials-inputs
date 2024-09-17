@@ -1,0 +1,28 @@
+# LAMMPS input file
+
+units real
+boundary p p p
+atom_style full
+
+kspace_style pppm 1.0e-5
+pair_style lj/class2/coul/long 8.5
+angle_style class2
+bond_style class2
+dihedral_style class2
+improper_style class2
+pair_modify tail yes mix sixthpower
+
+special_bonds lj/coul 0 0 1
+
+read_data reacted.data &
+  extra/bond/per/atom 5  &
+  extra/angle/per/atom 15 &
+  extra/dihedral/per/atom 15 &
+  extra/improper/per/atom 25 &
+  extra/special/per/atom 25
+
+dump mydmp all custom 1000 dump.lammpstrj id type xu yu zu
+
+fix mynvt all nvt temp 300 300 100
+
+run 5000

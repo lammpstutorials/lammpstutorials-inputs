@@ -1,0 +1,22 @@
+# LAMMPS Input File (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+# 1) Initialization
+units lj
+dimension 3
+atom_style atomic
+boundary p p p
+# 2) System definition
+# 3) Settings
+mass 1 1.0
+mass 2 10.0
+pair_style lj/cut 4.0
+pair_coeff 1 1 1.0 1.0
+pair_coeff 2 2 0.5 3.0
+# 4) Visualization
+thermo 10
+thermo_style custom step etotal press
+# 5) Run
+minimize 1.0e-6 1.0e-6 1000 10000

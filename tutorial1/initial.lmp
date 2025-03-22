@@ -5,7 +5,46 @@
 
 # PART A - ENERGY MINIMIZATION
 # 1) Initialization
+units lj
+dimension 3
+atom_style atomic
+boundary p p p
 # 2) System definition
+
+# 2) System deﬁnition
+region simbox block -20 20 -20 20 -20 20
+create_box 2 simbox
+create_atoms 1 random 1500 34134 simbox overlap 0.3
+create_atoms 2 random 100 12756 simbox overlap 0.3
+
 # 3) Settings
+mass 1 1.0
+mass 2 5.0
+pair_style lj/cut 4.0
+pair_coeff 1 1 1.0 1.0
+pair_coeff 2 2 0.5 3.0
+
 # 4) Visualization
+thermo 10
+thermo_style custom step etotal press
+
 # 5) Run
+minimize 1.0e-6 1.0e-6 1000 10000
+
+# PART B - MOLECULAR DYNAMICS
+# 4) Visualization
+thermo 50
+thermo_style custom step temp etotal pe ke press
+dump viz all image 100 myimage-*.ppm type type &
+  size 800 800 zoom 1.452 shiny 0.7 fsaa yes &
+  view 80 10 box yes 0.025 axes no 0.0 0.0 &
+  center s 0.483725 0.510373 0.510373
+dump_modify viz pad 9 boxcolor royalblue &
+  backcolor white adiam 1 1.6 adiam 2 4.8
+
+# 5) Run
+fix mynve all nve
+fix mylgv all langevin 1.0 1.0 0.1 10917
+timestep 0.005
+run 15000
+

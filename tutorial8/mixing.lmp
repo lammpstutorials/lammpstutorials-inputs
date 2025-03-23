@@ -1,0 +1,64 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+# inserting styrene molecules around a periodic CNT
+
+units real
+boundary p p p
+atom_style full
+
+kspace_style pppm 1.0e-5
+pair_style lj/class2/coul/long 8.5
+angle_style class2
+bond_style class2
+dihedral_style class2
+improper_style class2
+
+pair_modify tail yes mix sixthpower
+special_bonds lj/coul 0 0 1
+
+read_data CNT.data extra/special/per/atom 20
+group CNT type cp
+
+molecule styrene styrene.mol
+create_atoms 0 random 200 8305 NULL overlap 2.75 &
+  maxtry 500 mol styrene 7687
+
+minimize 1.0e-4 1.0e-6 100 1000
+reset_timestep 0
+
+velocity all create 530 9845 dist gaussian rot yes
+fix mynvt all nvt temp 530 530 100
+
+fix mydef all deform 1 y erate -0.0001 z erate -0.0001
+variable rho equal density
+fix myhal all halt 10 v_rho > 0.9 error continue
+
+thermo 200
+thermo_style custom step temp pe etotal press density
+
+run 9000
+
+unfix mydef
+unfix myhal
+reset_timestep 0
+
+fix myrec CNT recenter NULL 0 0 units box shift all
+
+dump viz all image 1000 myimage-*.ppm &
+  type type shiny 0.1 box no 0.01 size 1000 1000 &
+  view 90 0 zoom 1.8 fsaa yes bond atom 0.5
+dump_modify viz backcolor white &
+  acolor cp gray acolor c=1 gray &
+  acolor c= gray acolor c1 deeppink &
+  acolor c2 deeppink acolor c3 deeppink &
+  adiam cp 0.3 adiam c=1 0.3 &
+  adiam c= 0.3 adiam c1 0.3 &
+  adiam c2 0.3 adiam c3 0.3 &
+  acolor hc white adiam hc 0.15
+
+run 10000
+
+write_data mixing.data

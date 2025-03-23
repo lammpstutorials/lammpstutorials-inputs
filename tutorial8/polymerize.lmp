@@ -1,0 +1,61 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+# polymerization of PS-CNT composite using REACTER
+
+units real
+boundary p p p
+
+atom_style full
+kspace_style pppm 1.0e-5
+pair_style lj/class2/coul/long 8.5
+angle_style class2
+bond_style class2
+dihedral_style class2
+improper_style class2
+
+pair_modify tail yes mix sixthpower
+special_bonds lj/coul 0 0 1
+
+read_data mixing.data &
+  extra/bond/per/atom 5  &
+  extra/angle/per/atom 15 &
+  extra/dihedral/per/atom 15 &
+  extra/improper/per/atom 25 &
+  extra/special/per/atom 25
+
+molecule mol1 M-M_pre.mol
+molecule mol2 M-M_post.mol
+molecule mol3 M-P_pre.mol
+molecule mol4 M-P_post.mol
+molecule mol5 P-P_pre.mol
+molecule mol6 P-P_post.mol
+
+dump viz all image 200 myimage-*.ppm &
+  type type shiny 0.1 box no 0.01 size 1000 1000 &
+  view 90 0 zoom 1.8 fsaa yes bond atom 0.5
+dump_modify viz backcolor white &
+  acolor cp gray acolor c=1 gray &
+  acolor c= gray acolor c1 deeppink &
+  acolor c2 deeppink acolor c3 deeppink &
+  adiam cp 0.3 adiam c=1 0.3 &
+  adiam c= 0.3 adiam c1 0.3 &
+  adiam c2 0.3 adiam c3 0.3 &
+  acolor hc white adiam hc 0.15
+
+fix rxn all bond/react &
+  stabilization yes statted_grp 0.03 &
+  react R1 all 1 0 3.0 mol1 mol2 M-M.rxnmap &
+  react R2 all 1 0 3.0 mol3 mol4 M-P.rxnmap &
+  react R3 all 1 0 5.0 mol5 mol6 P-P.rxnmap
+
+fix mynvt statted_grp_REACT nvt temp 530 530 100
+group CNT molecule 1
+fix myrec CNT recenter NULL 0 0 shift all
+
+thermo 200
+thermo_style custom step temp press density f_rxn[*]
+
+run 25000

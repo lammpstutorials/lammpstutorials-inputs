@@ -1,0 +1,220 @@
+  using 8 OpenMP thread(s) per MPI task
+using multi-threaded neighbor list subroutines
+Reading data file ...
+  orthogonal box = (-22.470321 -8.5791788 -8.4910435) to (22.470321 8.5791788 8.4910435)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading bond labelmap ...
+  reading angle labelmap ...
+  reading atoms ...
+  720 atoms
+  reading velocities ...
+  720 velocities
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     0 = max # of 1-2 neighbors
+     0 = max # of 1-3 neighbors
+     0 = max # of 1-4 neighbors
+     3 = max # of special neighbors
+  special bonds CPU = 0.000 seconds
+  read_data CPU = 0.007 seconds
+Read molecule template h2omol:
+# Water molecule.
+  1 molecules
+  0 fragments
+  3 atoms with max type 4
+  2 bonds with max type 1
+  1 angles with max type 1
+  0 dihedrals with max type 0
+  0 impropers with max type 0
+Created 9 atoms
+  using lattice units in orthogonal box = (-22.470321 -8.5791788 -8.4910435) to (22.470321 8.5791788 8.4910435)
+  create_atoms CPU = 0.001 seconds
+720 atoms in group SiO
+9 atoms in group H2O
+Reading vashishta potential file SiO.1990.vashishta with DATE: 2015-10-14
+dynamic group oxygen defined
+Finding SHAKE clusters ...
+       0 = # of size 2 clusters
+       0 = # of size 3 clusters
+       0 = # of size 4 clusters
+       3 = # of frozen angles
+  find clusters CPU = 0.000 seconds
+WARNING: Temperature for fix modify is not for group all (src/fix_nh.cpp:1399)
+PPPM initialization ...
+  extracting TIP4P info from pair style
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.18197358
+  grid = 8 5 5
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.00084774316
+  estimated relative force accuracy = 5.8872504e-05
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 1300 200
+WARNING: Using a manybody potential with bonds/angles/dihedrals and special_bond exclusions (src/pair.cpp:243)
+WARNING: Communication cutoff 0 is shorter than a bond length based estimate of 2.4358. This may lead to errors. (src/comm.cpp:731)
+WARNING: Increasing communication cutoff to 12.1118 for TIP4P pair style (src/KSPACE/pair_lj_cut_tip4p_long.cpp:497)
+Hybrid pair style last /omp style lj/cut/tip4p/long
+Last active /omp style is kspace_style pppm/tip4p/omp
+0 atoms in group FixGCMC:gcmc_exclusion_group:fgcmc
+0 atoms in group FixGCMC:rotation_gas_atoms:fgcmc
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:658)
+Neighbor list info ...
+  update: every = 1 steps, delay = 1 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 11.3092
+  ghost atom cutoff = 12.1118
+  binsize = 5.6546, bins = 8 4 4
+  3 neighbor lists, perpetual/occasional/extra = 3 0 0
+  (1) pair vashishta, perpetual, skip from (3)
+      attributes: full, newton on, omp, cut 11
+      pair build: skip/omp
+      stencil: none
+      bin: none
+  (2) pair lj/cut/tip4p/long, perpetual
+      attributes: half, newton on, omp
+      pair build: half/bin/newton/omp
+      stencil: half/bin/3d
+      bin: standard
+  (3) neighbor class addition, perpetual
+      attributes: full, newton on, omp, cut 11
+      pair build: full/bin/omp
+      stencil: full/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 22.28 | 22.28 | 22.28 Mbytes
+   Step          Temp          TotEng          v_nO        f_fgcmc[3]     f_fgcmc[4]     f_fgcmc[5]     f_fgcmc[6]  
+         0   285.13328     -6335.4325      3              0              0              0              0            
+       250   301.23806     -6334.1075      5              133            8              167            6            
+       500   298.08649     -6336.5221      12             251            16             249            7            
+       750   310.49925     -6339.0375      16             389            22             411            9            
+      1000   308.27235     -6337.839       19             490            26             510            10           
+      1250   289.20804     -6343.732       25             642            34             658            12           
+      1500   291.67127     -6342.8147      25             738            34             762            12           
+      1750   294.45406     -6344.9521      25             892            36             908            14           
+      2000   304.27408     -6343.7614      26             989            37             1011           14           
+      2250   304.20967     -6344.4456      30             1145           41             1155           14           
+      2500   302.53029     -6347.0541      34             1248           45             1252           14           
+      2750   293.5522      -6347.1541      35             1395           47             1405           15           
+      3000   301.31462     -6346.6722      37             1498           49             1502           15           
+      3250   295.98926     -6350.1861      42             1668           54             1632           15           
+      3500   315.34772     -6349.2633      43             1780           55             1720           15           
+      3750   299.77631     -6351.1405      43             1942           55             1858           15           
+      4000   297.16644     -6352.1064      45             2043           57             1957           15           
+      4250   320.63371     -6350.2381      45             2195           57             2105           15           
+      4500   294.15946     -6354.1359      45             2282           57             2218           15           
+      4750   312.95401     -6351.3924      45             2428           57             2372           15           
+      5000   295.79729     -6353.0921      45             2522           58             2478           16           
+      5250   300.13138     -6353.0836      45             2675           58             2625           16           
+      5500   313.72314     -6350.6764      46             2782           59             2718           16           
+      5750   281.22551     -6354.3915      48             2926           61             2874           16           
+      6000   311.14841     -6352.1217      48             3032           61             2968           16           
+      6250   297.62352     -6354.9223      49             3194           62             3106           16           
+      6500   298.80348     -6354.9364      50             3299           63             3201           16           
+      6750   310.84837     -6354.2311      51             3452           64             3348           16           
+      7000   302.79506     -6356.379       51             3557           64             3443           16           
+      7250   313.3453      -6353.2668      51             3713           64             3587           16           
+      7500   300.28937     -6354.0007      53             3814           66             3686           16           
+      7750   296.07044     -6357.3874      53             3965           66             3835           16           
+      8000   311.65094     -6353.4985      53             4065           66             3935           16           
+      8250   295.0879      -6356.9759      55             4232           68             4068           16           
+      8500   297.49933     -6356.8199      55             4334           68             4166           16           
+      8750   304.30554     -6356.8047      56             4480           70             4320           17           
+      9000   290.09095     -6358.5108      57             4577           71             4423           17           
+      9250   295.8975      -6357.725       57             4712           71             4588           17           
+      9500   283.6437      -6360.1365      57             4815           71             4685           17           
+      9750   289.94422     -6358.3441      57             4962           71             4838           17           
+     10000   303.91843     -6358.1184      57             5065           71             4935           17           
+     10250   295.99277     -6358.5381      56             5219           71             5081           18           
+     10500   313.50402     -6358.4003      56             5320           71             5180           18           
+     10750   288.82014     -6359.6775      56             5468           71             5332           18           
+     11000   298.28939     -6357.7881      56             5573           71             5427           18           
+     11250   295.3045      -6359.06        56             5731           71             5569           18           
+     11500   301.78656     -6359.3269      57             5832           72             5668           18           
+     11750   307.42091     -6358.6623      57             5983           72             5817           18           
+     12000   292.04752     -6359.9514      57             6078           72             5922           18           
+     12250   299.56307     -6358.0656      57             6211           72             6089           18           
+     12500   298.03544     -6359.297       57             6308           72             6192           18           
+     12750   306.99008     -6360.1785      57             6469           72             6331           18           
+     13000   305.34927     -6357.9266      57             6564           73             6436           19           
+     13250   277.09584     -6360.5879      57             6714           73             6586           19           
+     13500   311.63989     -6358.2502      57             6807           73             6693           19           
+     13750   300.48141     -6357.4979      58             6956           74             6844           19           
+     14000   292.11607     -6360.2842      58             7056           74             6944           19           
+     14250   289.42735     -6359.5371      59             7200           75             7100           19           
+     14500   299.53143     -6360.0445      60             7293           76             7207           19           
+     14750   290.45103     -6360.3294      60             7439           76             7361           19           
+     15000   303.11132     -6359.0101      60             7536           76             7464           19           
+     15250   291.298       -6361.6093      61             7678           77             7622           19           
+     15500   309.02792     -6358.677       61             7776           77             7724           19           
+     15750   289.86194     -6361.7875      61             7927           77             7873           19           
+     16000   310.62199     -6358.5162      61             8027           77             7973           19           
+     16250   292.55568     -6361.0826      61             8188           77             8112           19           
+     16500   303.96722     -6360.9117      61             8275           77             8225           19           
+     16750   307.73703     -6359.8627      62             8426           78             8374           19           
+     17000   296.13534     -6362.0025      62             8521           78             8479           19           
+     17250   322.86037     -6357.828       62             8663           78             8637           19           
+     17500   303.16027     -6361.1916      63             8779           79             8721           19           
+     17750   291.48304     -6360.8008      63             8927           79             8873           19           
+     18000   314.60178     -6358.912       63             9019           79             8981           19           
+     18250   301.43736     -6361.1584      63             9166           80             9134           20           
+     18500   309.43641     -6358.6889      62             9263           80             9237           21           
+     18750   305.92921     -6360.1271      62             9411           80             9389           21           
+     19000   291.584       -6359.9745      62             9508           80             9492           21           
+     19250   298.46591     -6362.0899      62             9653           80             9647           21           
+     19500   287.88815     -6361.7724      62             9745           80             9755           21           
+     19750   307.64143     -6359.3506      62             9892           80             9908           21           
+     20000   292.02518     -6361.5597      62             9995           80             10005          21           
+     20250   306.70099     -6360.2752      62             10148          80             10152          21           
+     20500   309.74547     -6359.6251      62             10245          80             10255          21           
+     20750   285.13623     -6362.6745      62             10400          80             10400          21           
+     21000   309.47294     -6359.5997      62             10511          80             10489          21           
+     21250   295.4914      -6360.7633      62             10663          80             10637          21           
+     21500   299.68623     -6361.0812      62             10757          80             10743          21           
+     21750   305.79147     -6359.0057      62             10904          80             10896          21           
+     22000   285.75463     -6362.1271      62             11006          80             10994          21           
+     22250   302.91164     -6362.0101      62             11144          80             11156          21           
+     22500   296.44168     -6360.3696      62             11228          80             11272          21           
+     22750   287.95648     -6362.3986      62             11370          80             11430          21           
+     23000   296.35691     -6361.1787      63             11465          81             11535          21           
+     23250   289.6654      -6361.0781      63             11596          81             11704          21           
+     23500   294.74814     -6363.724       63             11694          81             11806          21           
+     23750   312.24848     -6361.1451      63             11838          81             11962          21           
+     24000   290.41894     -6361.8481      63             11932          81             12068          21           
+     24250   300.76491     -6362.9242      63             12082          81             12218          21           
+     24500   301.289       -6361.1204      63             12193          81             12307          21           
+     24750   295.01618     -6363.3924      63             12343          81             12457          21           
+     25000   316.30004     -6359.1493      63             12441          81             12559          21           
+Loop time of 227.714 on 8 procs for 25000 steps with 909 atoms
+
+Performance: 9.486 ns/day, 2.530 hours/ns, 109.787 timesteps/s, 99.796 katom-step/s
+795.4% CPU use with 1 MPI tasks x 8 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 41.594     | 41.594     | 41.594     |   0.0 | 18.27
+Bond    | 0.10416    | 0.10416    | 0.10416    |   0.0 |  0.05
+Kspace  | 5.7081     | 5.7081     | 5.7081     |   0.0 |  2.51
+Neigh   | 8.1925     | 8.1925     | 8.1925     |   0.0 |  3.60
+Comm    | 0.76841    | 0.76841    | 0.76841    |   0.0 |  0.34
+Output  | 5.3755     | 5.3755     | 5.3755     |   0.0 |  2.36
+Modify  | 165.91     | 165.91     | 165.91     |   0.0 | 72.86
+Other   |            | 0.05908    |            |       |  0.03
+
+Nlocal:            909 ave         909 max         909 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:           7137 ave        7137 max        7137 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         190327 ave      190327 max      190327 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 190327
+Ave neighs/atom = 209.38064
+Ave special neighs/atom = 0.41584158
+Neighbor list builds = 27376
+Dangerous builds = 0

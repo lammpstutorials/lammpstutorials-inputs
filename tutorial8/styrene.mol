@@ -1,0 +1,180 @@
+# LAMMPS Input File (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+# styrene_molecule
+
+     16 atoms
+     16 bonds
+     24 angles
+     32 dihedrals
+     8 impropers
+
+Coords
+
+      1    13.465814590     0.682534277    -1.658940911
+      2    14.397815704     1.221534133    -1.658940911
+      3    12.235815048     1.392534137    -1.658940911
+      4    12.235815048     2.892534256    -1.658940911
+      5    11.005815506     0.682534277    -1.658940911
+      6    10.073815346     1.221534133    -1.658940911
+      7    11.005815506    -0.737465739    -1.658940911
+      8    10.073815346    -1.276464581    -1.658940911
+      9    12.235815048    -1.447464824    -1.658940911
+     10    12.235815048    -2.524465084    -1.658940911
+     11    13.465814590    -0.737465739    -1.658940911
+     12    14.397815704    -1.276464581    -1.658940911
+     13    13.101815224     3.297534943    -1.301940918
+     14    10.957815170     3.441534996    -2.220940590
+     15    11.007814407     4.183535576    -2.319940567
+     16    10.314815521     2.618533611    -2.514940262
+
+Types
+
+      1 cp
+      2 hc
+      3 cp
+      4 c=1
+      5 cp
+      6 hc
+      7 cp
+      8 hc
+      9 cp
+     10 hc
+     11 cp
+     12 hc
+     13 hc
+     14 c=
+     15 hc
+     16 hc
+
+Charges
+
+      1 -0.129000
+      2  0.123700
+      3  0.026600
+      4 -0.018200
+      5 -0.129000
+      6  0.123700
+      7 -0.173400
+      8  0.140300
+      9 -0.113400
+     10  0.128800
+     11 -0.173400
+     12  0.140300
+     13  0.051800
+     14 -0.069600
+     15  0.035400
+     16  0.035400
+
+Molecules
+
+      1      1
+      2      1
+      3      1
+      4      1
+      5      1
+      6      1
+      7      1
+      8      1
+      9      1
+     10      1
+     11      1
+     12      1
+     13      1
+     14      1
+     15      1
+     16      1
+
+Bonds
+
+     1 cp-hc      1      2
+     2 cp-cp      1      3
+     3 cp-cp      1     11
+     4 cp-c=1      3      4
+     5 cp-cp      3      5
+     6 hc-c=1     13      4
+     7 c=1-c=      4     14
+     8 cp-hc      5      6
+     9 cp-cp      5      7
+    10 cp-hc      7      8
+    11 cp-cp      7      9
+    12 cp-hc      9     10
+    13 cp-cp      9     11
+    14 cp-hc     11     12
+    15 hc-c=     15     14
+    16 hc-c=     16     14
+
+Angles
+
+     1 cp-cp-hc      3      1      2
+     2 cp-cp-hc     11      1      2
+     3 cp-cp-cp      3      1     11
+     4 cp-cp-c=1      1      3      4
+     5 cp-cp-cp      1      3      5
+     6 cp-cp-c=1      5      3      4
+     7 cp-c=1-hc      3      4     13
+     8 cp-c=1-c=      3      4     14
+     9 hc-c=1-c=     13      4     14
+    10 cp-cp-hc      3      5      6
+    11 cp-cp-cp      3      5      7
+    12 cp-cp-hc      7      5      6
+    13 cp-cp-hc      5      7      8
+    14 cp-cp-cp      5      7      9
+    15 cp-cp-hc      9      7      8
+    16 cp-cp-hc      7      9     10
+    17 cp-cp-cp      7      9     11
+    18 cp-cp-hc     11      9     10
+    19 cp-cp-cp      1     11      9
+    20 cp-cp-hc      1     11     12
+    21 cp-cp-hc      9     11     12
+    22 hc-c=-c=1     15     14      4
+    23 hc-c=-c=1     16     14      4
+    24 hc-c=-hc     15     14     16
+
+Dihedrals
+
+     1 hc-cp-cp-c=1      2      1      3      4
+     2 cp-cp-cp-hc      5      3      1      2
+     3 cp-cp-cp-c=1     11      1      3      4
+     4 cp-cp-cp-cp     11      1      3      5
+     5 cp-cp-cp-hc      9     11      1      2
+     6 hc-cp-cp-hc      2      1     11     12
+     7 cp-cp-cp-cp      3      1     11      9
+     8 cp-cp-cp-hc      3      1     11     12
+     9 cp-cp-c=1-hc      1      3      4     13
+    10 cp-cp-c=1-c=      1      3      4     14
+    11 cp-cp-c=1-hc      5      3      4     13
+    12 cp-cp-c=1-c=      5      3      4     14
+    13 cp-cp-cp-hc      1      3      5      6
+    14 cp-cp-cp-cp      1      3      5      7
+    15 hc-cp-cp-c=1      6      5      3      4
+    16 cp-cp-cp-c=1      7      5      3      4
+    17 cp-c=1-c=-hc      3      4     14     15
+    18 cp-c=1-c=-hc      3      4     14     16
+    19 hc-c=1-c=-hc     13      4     14     15
+    20 hc-c=1-c=-hc     13      4     14     16
+    21 cp-cp-cp-hc      3      5      7      8
+    22 cp-cp-cp-cp      3      5      7      9
+    23 hc-cp-cp-hc      6      5      7      8
+    24 cp-cp-cp-hc      9      7      5      6
+    25 cp-cp-cp-hc      5      7      9     10
+    26 cp-cp-cp-cp      5      7      9     11
+    27 hc-cp-cp-hc      8      7      9     10
+    28 cp-cp-cp-hc     11      9      7      8
+    29 cp-cp-cp-cp      7      9     11      1
+    30 cp-cp-cp-hc      7      9     11     12
+    31 cp-cp-cp-hc      1     11      9     10
+    32 hc-cp-cp-hc     10      9     11     12
+
+Impropers
+
+     1 cp-cp-cp-hc      3      1     11      2
+     2 cp-cp-cp-c=1      1      3      5      4
+     3 cp-c=1-hc-c=      3      4     13     14
+     4 cp-cp-cp-hc      3      5      7      6
+     5 cp-cp-cp-hc      5      7      9      8
+     6 cp-cp-cp-hc      7      9     11     10
+     7 cp-cp-cp-hc      1     11      9     12
+     8 hc-c=-hc-c=1     15     14     16      4

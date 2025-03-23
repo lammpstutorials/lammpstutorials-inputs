@@ -1,0 +1,73 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+units metal
+atom_style molecular
+boundary f f f
+pair_style lj/cut 14
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style harmonic
+read_data unbreakable.data extra/bond/per/atom 10 extra/special/per/atom 10
+include parameters.inc
+
+pair_style airebo 3.0 1 1
+pair_coeff * * CH.airebo C
+bond_style zero
+bond_coeff 1 1.4
+delete_bonds all angle 1
+delete_bonds all dihedral 1
+delete_bonds all improper 1 remove special
+
+angle_style none
+dihedral_style none
+improper_style none
+
+special_bonds lj/coul 1.0 1.0 1.0
+group carbon_atoms type 1
+
+variable xmax equal bound(carbon_atoms,xmax)-0.5
+variable xmin equal bound(carbon_atoms,xmin)+0.5
+region rtop block ${xmax} INF INF INF INF INF
+region rbot block INF ${xmin} INF INF INF INF
+region rmid block ${xmin} ${xmax} INF INF INF INF
+
+group cnt_top region rtop
+group cnt_bot region rbot
+group cnt_mid region rmid
+
+velocity cnt_mid create 300 48455 mom yes rot yes
+
+fix mynve1 cnt_top nve
+fix mynve2 cnt_bot nve
+fix mynvt cnt_mid nvt temp 300 300 0.1
+
+fix mysf1 cnt_bot setforce 0 0 0
+fix mysf2 cnt_top setforce 0 0 0
+velocity cnt_bot set 0 0 0
+velocity cnt_top set 0 0 0
+
+variable Lcnt equal xcm(cnt_top,x)-xcm(cnt_bot,x)
+variable Fcnt equal f_mysf1[1]-f_mysf2[1]
+
+dump viz all image 500 myimage-*.ppm element type size 1000 400 zoom 4 shiny 0.3  fsaa yes bond atom 0.8 view 0 90 box no 0.0 axes no 0.0 0.0
+dump_modify viz pad 9 backcolor white element C adiam 1 0.85 bdiam 1 1.0
+
+fix break all bond/break 1000 1 2.5
+fix form all bond/create/angle 1000 1 1 2.0 1 aconstrain 90.0 180 
+
+compute Tmid cnt_mid temp
+thermo 100
+thermo_style custom step temp etotal v_Lcnt v_Fcnt
+thermo_modify temp Tmid line yaml
+
+timestep 0.0005
+run 10000
+
+velocity cnt_top set 0.75 0 0
+velocity cnt_bot set -0.75 0 0
+
+run 30000 

@@ -13,7 +13,7 @@ inputs/freeenergy/BiasedSampling/wham-release-2.0.11
 docs/sphinx/build
 
 # force the upload of certain dump and log files
-!vmd/dump.lammpstrj
+# tofix
 !level1/lennard-jones-fluid/my-first-input/log.lammps
 !level1/breaking-a-carbon-nanotube/breakable-bonds/dump.lammpstrj
 !level1/breaking-a-carbon-nanotube/breakable-bonds/log.lammps

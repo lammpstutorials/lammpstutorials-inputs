@@ -1,0 +1,69 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+units real
+atom_style molecular
+boundary f f f
+
+pair_style lj/cut 14.0
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style harmonic
+special_bonds lj 0.0 0.0 0.5
+
+read_data unbreakable.data
+include unbreakable.inc
+
+group carbon_atoms type 1
+variable xmax equal bound(carbon_atoms,xmax)-0.5
+variable xmin equal bound(carbon_atoms,xmin)+0.5
+region rtop block ${xmax} INF INF INF INF INF
+region rbot block INF ${xmin} INF INF INF INF
+region rmid block ${xmin} ${xmax} INF INF INF INF
+
+group cnt_top region rtop
+group cnt_bot region rbot
+group cnt_mid region rmid
+set group cnt_top mol 1
+set group cnt_bot mol 2
+set group cnt_mid mol 3
+
+variable xmax_del equal ${xmax}-2
+variable xmin_del equal ${xmin}+2
+region rdel block ${xmin_del} ${xmax_del} INF INF INF INF
+group rdel region rdel
+delete_atoms random fraction 0.02 no rdel NULL 2793 bond yes
+
+reset_atoms id sort yes
+velocity cnt_mid create 300 48455 mom yes rot yes
+
+fix mynve1 cnt_top nve
+fix mynve2 cnt_bot nve
+fix mynvt cnt_mid nvt temp 300 300 100
+
+fix mysf1 cnt_top setforce 0 0 0
+fix mysf2 cnt_bot setforce 0 0 0
+velocity cnt_top set 0 0 0
+velocity cnt_bot set 0 0 0
+
+variable Lcnt equal xcm(cnt_top,x)-xcm(cnt_bot,x)
+variable Fcnt equal f_mysf1[1]-f_mysf2[1]
+
+dump viz all image 500 myimage-*.ppm element type size 1000 400 zoom 6 shiny 0.3 fsaa yes bond atom 0.8 view 0 90 box no 0.0 axes no 0.0 0.0
+dump_modify viz pad 9 backcolor white adiam 1 0.85 bdiam 1 1.0
+
+compute Tmid cnt_mid temp
+thermo 100
+thermo_style custom step temp etotal v_Lcnt v_Fcnt
+thermo_modify temp Tmid line yaml
+
+timestep 1.0
+run 5000
+
+velocity cnt_top set 0.0005 0 0
+velocity cnt_bot set -0.0005 0 0
+
+run 10000

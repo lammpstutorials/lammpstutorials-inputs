@@ -1,0 +1,36 @@
+# LAMMPS input file (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+kspace_style pppm 1e-5
+read_restart water.restart
+
+molecule pegmol peg.mol
+create_atoms 0 single 0 0 0 mol pegmol 454756
+
+group PEG type C CPos H HC OAlc OE
+
+delete_atoms overlap 2.0 H2O PEG mol yes
+
+dump viz all image 250 myimage-*.ppm type &
+ type shiny 0.1 box no 0.01 &
+ view 0 90 zoom 3 fsaa yes bond atom 0.8 size 1000 500
+dump_modify viz backcolor white &
+ acolor OW red acolor HW white &
+ acolor OE darkred acolor OAlc darkred &
+ acolor C gray acolor CPos gray &
+ acolor H white acolor HC white &
+ adiam OW 0.2 adiam HW 0.2 &
+ adiam C 2.8 adiam CPos 2.8 adiam OAlc 2.6 &
+ adiam H 1.4 adiam HC 1.4 adiam OE 2.6
+
+fix mynpt all npt temp 300 300 100 x 1 1 1000
+fix myrct PEG recenter 0 0 0 shift all
+timestep 1.0
+
+thermo 500
+run 10000
+
+write_restart merge.restart
+# write_data merge.data # uncomment to write a .data file as well

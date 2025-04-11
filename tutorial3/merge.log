@@ -1,0 +1,172 @@
+  using 8 OpenMP thread(s) per MPI task
+using multi-threaded neighbor list subroutines
+Reading restart file ...
+  restart file = 29 Aug 2024, LAMMPS = 29 Aug 2024
+  restoring atom style full from restart
+  orthogonal box = (-22.256144 -11.128072 -11.128072) to (22.256144 11.128072 11.128072)
+  1 by 1 by 1 MPI processor grid
+  restoring pair style lj/cut/coul/long/omp from restart
+  restoring bond style harmonic/omp from restart
+  restoring angle style harmonic/omp from restart
+  restoring dihedral style harmonic/omp from restart
+  2100 atoms
+  1400 bonds
+  700 angles
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0.5     
+  special bond factors coul:  0        0        1       
+     2 = max # of 1-2 neighbors
+     1 = max # of 1-3 neighbors
+     1 = max # of 1-4 neighbors
+    15 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_restart CPU = 0.005 seconds
+Read molecule template pegmol:
+PEG molecule
+  1 molecules
+  0 fragments
+  59 atoms with max type 6
+  58 bonds with max type 6
+  104 angles with max type 7
+  116 dihedrals with max type 4
+  0 impropers with max type 0
+Created 59 atoms
+  using lattice units in orthogonal box = (-22.256144 -11.128072 -11.128072) to (22.256144 11.128072 11.128072)
+  create_atoms CPU = 0.000 seconds
+59 atoms in group PEG
+System init for delete_atoms ...
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.30147332
+  grid = 32 20 20
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0034375004
+  estimated relative force accuracy = 1.035193e-05
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 28431 12800
+Generated 28 of 28 mixed pair_coeff terms from geometric mixing rule
+Unused restart file global fix info:
+  fix style: npt, fix ID: mynpt
+Last active /omp style is kspace_style pppm/omp
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 8 4 4
+  2 neighbor lists, perpetual/occasional/extra = 1 1 0
+  (1) command delete_atoms, occasional
+      attributes: full, newton on, omp
+      pair build: full/bin/omp
+      stencil: full/bin/3d
+      bin: standard
+  (2) pair lj/cut/coul/long/omp, perpetual
+      attributes: half, newton on, omp
+      pair build: half/bin/newton/omp
+      stencil: half/bin/3d
+      bin: standard
+WARNING: Ignoring 'compress yes' for molecular system (src/delete_atoms.cpp:141)
+Deleted 96 atoms, new total = 2063
+Deleted 64 bonds, new total = 1394
+Deleted 32 angles, new total = 772
+Deleted 0 dihedrals, new total = 116
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+Your simulation uses code contributions which should be cited:
+- Type Label Framework: https://doi.org/10.1021/acs.jpcb.3c08419
+The log file lists these citations in BibTeX format.
+
+CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE-CITE
+
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.30147173
+  grid = 32 20 20
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0033561701
+  estimated relative force accuracy = 1.0107007e-05
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 28431 12800
+Generated 28 of 28 mixed pair_coeff terms from geometric mixing rule
+Last active /omp style is kspace_style pppm/omp
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 8 4 4
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut/coul/long/omp, perpetual
+      attributes: half, newton on, omp
+      pair build: half/bin/newton/omp
+      stencil: half/bin/3d
+      bin: standard
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 15000
+  Time step     : 1
+Per MPI rank memory allocation (min/avg/max) = 21.57 | 21.57 | 21.57 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press          Volume    
+     15000   293.96336     -6937.5692      809.92925     -4320.8147     -324.16098      22048.535    
+     15500   303.55223     -7052.6966      800.95294     -4385.981       159.56378      22126.265    
+     16000   299.6112      -7008.7809      788.22037     -4379.0211     -521.48094      22225.118    
+     16500   297.84365     -7024.1933      799.14999     -4394.368      -549.95427      22078.839    
+     17000   304.4771      -7151.7783      828.86978     -4451.4613     -1196.0884      21797.644    
+     17500   297.2736      -7140.0735      799.15477     -4513.7472     -64.748238      21483.268    
+     18000   290.38437     -7125.4702      772.583       -4568.0599     -147.3855       21603.548    
+     18500   300.21995     -7069.3954      797.33657     -4426.7778     -858.54751      21744.808    
+     19000   304.5521      -7222.3234      892.996       -4457.4191     -299.2864       21693.475    
+     19500   300.26279     -7212.0992      892.97173     -4473.5832      317.78627      21838.822    
+     20000   296.16369     -7088.4563      790.03404     -4478.0727     -324.19543      21847.186    
+     20500   294.2846      -7173.3437      862.60611     -4501.9378     -10.865505      21688.816    
+     21000   307.82989     -7129.0355      839.23064     -4397.7499      483.90536      21507.857    
+     21500   298.67151     -7128.1414      811.38427     -4480.9935      508.12832      21488.203    
+     22000   293.33114     -7103.4785      840.9377      -4459.6014      1534.3863      21399.357    
+     22500   300.04254     -7088.2347      811.98583     -4432.0583      13.37241       21477.914    
+     23000   297.09602     -7052.5148      855.06239     -4371.3725     -99.140411      21868.119    
+     23500   304.62568     -7119.4796      835.07566     -4412.0435     -66.958474      21978.769    
+     24000   301.80283     -7134.5524      806.69856     -4472.8438      399.88923      21660.515    
+     24500   296.45896     -7156.1096      838.01791     -4495.9273      456.62139      21628.227    
+     25000   297.98494     -7041.5008      828.93835     -4381.0188      146.83299      21852.916    
+Loop time of 68.6241 on 8 procs for 10000 steps with 2063 atoms
+
+Performance: 12.590 ns/day, 1.906 hours/ns, 145.721 timesteps/s, 300.623 katom-step/s
+713.6% CPU use with 1 MPI tasks x 8 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 21.648     | 21.648     | 21.648     |   0.0 | 31.55
+Bond    | 0.39399    | 0.39399    | 0.39399    |   0.0 |  0.57
+Kspace  | 25.793     | 25.793     | 25.793     |   0.0 | 37.59
+Neigh   | 2.7759     | 2.7759     | 2.7759     |   0.0 |  4.05
+Comm    | 0.82742    | 0.82742    | 0.82742    |   0.0 |  1.21
+Output  | 10.283     | 10.283     | 10.283     |   0.0 | 14.98
+Modify  | 6.8375     | 6.8375     | 6.8375     |   0.0 |  9.96
+Other   |            | 0.06478    |            |       |  0.09
+
+Nlocal:           2063 ave        2063 max        2063 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11827 ave       11827 max       11827 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         703928 ave      703928 max      703928 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 703928
+Ave neighs/atom = 341.21571
+Ave special neighs/atom = 2.2171595
+Neighbor list builds = 542
+Dangerous builds = 0
+System init for write_restart ...
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.30178312
+  grid = 32 20 20
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0033082643
+  estimated relative force accuracy = 9.9627396e-06
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 28431 12800
+Generated 28 of 28 mixed pair_coeff terms from geometric mixing rule
+Last active /omp style is kspace_style pppm/omp

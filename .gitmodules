@@ -1,0 +1,6 @@
+[submodule "dependencies/.github"]
+	path = dependencies/.github
+	url = git@github.com:lammpstutorials/.github.git
+[submodule ".dependencies/.github"]
+	path = .dependencies/.github
+	url = git@github.com:lammpstutorials/.github.git

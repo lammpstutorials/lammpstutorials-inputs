@@ -1,0 +1,51 @@
+# LAMMPS input file (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+kspace_style pppm 1e-5
+read_restart merge.restart
+
+group ends type OAlc
+variable xcm equal xcm(ends,x)
+variable oxies atom type==label2type(atom,OAlc)
+variable end1 atom v_oxies*(x>v_xcm)
+variable end2 atom v_oxies*(x<v_xcm)
+group topull1 variable end1
+group topull2 variable end2
+
+dump viz all image 250 myimage-*.ppm type &
+  type shiny 0.1 box no 0.01 &
+  view 0 90 zoom 3 fsaa yes bond atom 0.8 size 1000 500 
+dump_modify viz backcolor white &
+  acolor OW red acolor HW white &
+  acolor OE darkred acolor OAlc darkred &
+  acolor C gray acolor CPos gray &
+  acolor H white acolor HC white &
+  adiam OW 0.2 adiam HW 0.2 &
+  adiam C 2.8 adiam CPos 2.8 adiam OAlc 2.6 &
+  adiam H 1.4 adiam HC 1.4 adiam OE 2.6
+
+timestep 1.0
+fix mynvt all nvt temp 300 300 100
+fix myrct PEG recenter 0 0 0 shift all
+
+compute rgyr PEG gyration
+compute prop PEG property/local dtype
+compute dphi PEG dihedral/local phi
+#compute mphi PEG reduce ave c_dphi inputs local
+
+thermo_style custom step temp etotal c_rgyr # c_mphi
+thermo 250
+
+dump mydmp all local 50 pull.dat index c_dphi c_prop
+
+# S.G.: a histogram would be ok if one could select only dihedral 2 
+# fix myhisto all ave/histo 100 120 15000 0 180 90 c_dphi file pull.dat ave running mode vector
+
+run 15000
+
+fix myaf1 topull1 addforce 10 0 0
+fix myaf2 topull2 addforce -10 0 0
+
+run 15000

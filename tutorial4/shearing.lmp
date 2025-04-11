@@ -1,0 +1,61 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+boundary p p f
+units real
+atom_style full
+bond_style harmonic
+angle_style harmonic
+pair_style lj/cut/tip4p/long O H O-H H-O-H 0.1546 12.0
+kspace_style pppm/tip4p 1.0e-5
+kspace_modify slab 3.0
+
+read_data equilibrate.data
+
+include parameters.inc
+include groups.inc
+
+compute Tfluid fluid temp/partial 0 1 1
+fix mynvt1 fluid nvt temp 300 300 100
+fix_modify mynvt1 temp Tfluid
+
+compute Twall wall temp/partial 0 1 1
+fix mynvt2 wall nvt temp 300 300 100
+fix_modify mynvt2 temp Twall
+
+fix myshk H2O shake 1.0e-5 200 0 b O-H a H-O-H
+fix myrct all recenter NULL NULL 0
+timestep 1.0
+
+fix mysf1 walltop setforce 0 NULL NULL
+fix mysf2 wallbot setforce 0 NULL NULL
+velocity wallbot set -2e-4 NULL NULL
+velocity walltop set 2e-4 NULL NULL
+
+dump mydmp all image 250 myimage-*.ppm type type &
+  shiny 0.1 box no 0.01 view 90 0 zoom 1.8
+dump_modify mydmp backcolor white &
+  acolor O red adiam O 2 &
+  acolor H white adiam H 1 &
+  acolor Na+ blue adiam Na+ 2.5 &
+  acolor Cl- cyan adiam Cl- 3 &
+  acolor WALL gray adiam WALL 3
+
+thermo 250
+thermo_modify temp Tfluid
+thermo_style custom step temp etotal f_mysf1[1] f_mysf2[1] 
+
+compute cc1 H2O chunk/atom bin/1d z 0.0 0.25
+compute cc2 wall chunk/atom bin/1d z 0.0 0.25
+compute cc3 ions chunk/atom bin/1d z 0.0 0.25
+
+fix myac1 H2O ave/chunk 10 15000 200000 &
+  cc1 density/mass vx file shearing-water.dat
+fix myac2 wall ave/chunk 10 15000 200000 &
+  cc2 density/mass vx file shearing-wall.dat
+fix myac3 ions ave/chunk 10 15000 200000 &
+  cc3 density/mass vx file shearing-ions.dat
+
+run 200000

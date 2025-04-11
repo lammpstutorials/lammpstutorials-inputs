@@ -1,0 +1,48 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+units real
+atom_style full
+
+read_data deform-mod.data
+displace_atoms all move −12 0 0 # optional
+
+pair_style reaxff NULL safezone 3.0 mincap 150
+pair_coeff * * reaxCHOFe.inc Si O H
+fix myqeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff maxiter 400
+
+group grpSi type Si
+group grpO type O
+group grpH type H
+variable qSi equal charge(grpSi)/count(grpSi)
+variable qO equal charge(grpO)/count(grpO)
+variable qH equal charge(grpH)/(count(grpH)+1e-10)
+variable vq atom q
+
+thermo 200
+thermo_style custom step temp etotal press vol v_qSi v_qO v_qH
+dump viz all image 100 myimage-*.ppm q &
+  type shiny 0.1 box no 0.01 view 180 90 zoom 2.3 size 1200 500
+dump_modify viz adiam Si 2.6 adiam O 2.3 adiam H 1.0 &
+  backcolor white amap -1 2 ca 0.0 3 min royalblue &
+  0 green max orangered
+
+fix myhis1 grpSi ave/histo 10 500 5000 -1.5 2.5 1000 v_vq file decorate-Si.histo mode vector
+fix myhis2 grpO ave/histo 10 500 5000 -1.5 2.5 1000 v_vq file decorate-O.histo mode vector
+fix myhis3 grpH ave/histo 10 500 5000 -1.5 2.5 1000 v_vq file decorate-H.histo mode vector
+fix myspec all reaxff/species 5 1 5 deform.species element Si O H
+
+fix mynvt all nvt temp 300.0 300.0 100
+timestep 0.5
+
+label loop
+
+variable a loop 10
+variable seed equal 35672+${a}
+create_atoms 3 random 2 ${seed} NULL overlap 2.6 maxtry 50
+
+run 2000
+next a
+jump SELF loop

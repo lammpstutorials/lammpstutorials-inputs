@@ -1,0 +1,288 @@
+  using 8 OpenMP thread(s) per MPI task
+using multi-threaded neighbor list subroutines
+Reading data file ...
+  orthogonal box = (-2.3164529 -26.16 -26.16) to (13.21044 26.16 26.16)
+  1 by 1 by 1 MPI processor grid
+  reading atom labelmap ...
+  reading bond labelmap ...
+  reading angle labelmap ...
+  reading dihedral labelmap ...
+  reading improper labelmap ...
+  reading atoms ...
+  3392 atoms
+  reading velocities ...
+  3392 velocities
+  scanning bonds ...
+  8 = max bonds/atom
+  scanning angles ...
+  18 = max angles/atom
+  scanning dihedrals ...
+  27 = max dihedrals/atom
+  scanning impropers ...
+  26 = max impropers/atom
+  orthogonal box = (-2.3164529 -26.16 -26.16) to (13.21044 26.16 26.16)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  3488 bonds
+  reading angles ...
+  5376 angles
+  reading dihedrals ...
+  7552 dihedrals
+  reading impropers ...
+  1792 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        1       
+  special bond factors coul:  0        0        1       
+     3 = max # of 1-2 neighbors
+     6 = max # of 1-3 neighbors
+    34 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.043 seconds
+Read molecule template mol1:
+2styrene_unreacted
+  1 molecules
+  0 fragments
+  32 atoms with max type 4
+  32 bonds with max type 11
+  48 angles with max type 19
+  64 dihedrals with max type 21
+  16 impropers with max type 9
+Read molecule template mol2:
+2styrene_reacted
+  1 molecules
+  0 fragments
+  32 atoms with max type 6
+  33 bonds with max type 13
+  54 angles with max type 22
+  79 dihedrals with max type 19
+  14 impropers with max type 8
+Read molecule template mol3:
+chain_plus_styrene_unreacted
+  1 molecules
+  0 fragments
+  46 atoms with max type 6
+  47 bonds with max type 13
+  75 angles with max type 22
+  105 dihedrals with max type 21
+  21 impropers with max type 9
+Read molecule template mol4:
+chain_plus_styrene_reacted
+  1 molecules
+  0 fragments
+  46 atoms with max type 6
+  48 bonds with max type 13
+  81 angles with max type 22
+  121 dihedrals with max type 19
+  19 impropers with max type 8
+Read molecule template mol5:
+chain_chain_unreacted
+  1 molecules
+  0 fragments
+  50 atoms with max type 6
+  51 bonds with max type 13
+  84 angles with max type 22
+  118 dihedrals with max type 19
+  20 impropers with max type 8
+Read molecule template mol6:
+chain_chain_reacted
+  1 molecules
+  0 fragments
+  50 atoms with max type 6
+  52 bonds with max type 13
+  90 angles with max type 22
+  135 dihedrals with max type 19
+  18 impropers with max type 3
+dynamic group bond_react_MASTER_group defined
+dynamic group statted_grp_REACT defined
+192 atoms in group CNT
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = -0.04 (src/kspace.cpp:327)
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.28904869
+  grid = 9 24 24
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.0026123692
+  estimated relative force accuracy = 7.8670722e-06
+  using double precision KISS FFT
+  3d grid and FFT values/proc = 13456 5184
+Generated 21 of 21 mixed pair_coeff terms from sixthpower/sixthpower mixing rule
+Last active /omp style is kspace_style pppm/omp
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 10.5
+  ghost atom cutoff = 10.5
+  binsize = 5.25, bins = 3 10 10
+  2 neighbor lists, perpetual/occasional/extra = 1 1 0
+  (1) pair lj/class2/coul/long/omp, perpetual
+      attributes: half, newton on, omp
+      pair build: half/bin/newton/omp
+      stencil: half/bin/3d
+      bin: standard
+  (2) fix bond/react, occasional, copy from (1)
+      attributes: half, newton on
+      pair build: copy
+      stencil: none
+      bin: none
+Setting up Verlet run ...
+  Unit style    : real
+  Current step  : 0
+  Time step     : 1
+WARNING: Inconsistent image flags (src/domain.cpp:1051)
+Per MPI rank memory allocation (min/avg/max) = 40.48 | 40.48 | 40.48 Mbytes
+   Step          Temp          Press         Density        f_rxn[1]       f_rxn[2]       f_rxn[3]   
+         0   522.28375     -9541.48        0.90392574     0              0              0            
+       200   548.89404     -6047.0261      0.90392574     4              0              0            
+       400   528.34026     -9388.0102      0.90392574     11             0              0            
+       600   534.80023     -7971.9718      0.90392574     13             1              0            
+       800   550.52223     -10478.275      0.90392574     13             2              1            
+      1000   537.15357     -8511.6566      0.90392574     15             2              1            
+      1200   530.93955     -14715.249      0.90392574     22             3              1            
+      1400   525.46219     -17550.956      0.90392574     24             3              1            
+      1600   530.34146     -74783.829      0.90392574     30             3              3            
+      1800   537.52127     -30521.584      0.90392574     33             3              4            
+      2000   537.04039     -66670.292      0.90392574     35             3              5            
+      2200   549.04613     -8297.0659      0.90392574     38             3              8            
+      2400   533.75668     -8579.283       0.90392574     40             3              8            
+      2600   548.44233     -7363.7606      0.90392574     42             3              10           
+      2800   549.75956     -8027.7669      0.90392574     43             3              15           
+      3000   524.60241     -9448.2719      0.90392574     44             3              15           
+      3200   536.13443     -6547.2356      0.90392574     47             3              16           
+      3400   539.53067     -7036.717       0.90392574     49             6              17           
+      3600   533.40012     -108044.08      0.90392574     51             6              19           
+      3800   539.71333     -14693.799      0.90392574     53             6              20           
+      4000   534.70631     -7931.769       0.90392574     54             6              22           
+      4200   563.1822      -9610.1184      0.90392574     56             8              26           
+      4400   567.85999     -8895.5749      0.90392574     58             8              31           
+      4600   522.65933     -8666.6644      0.90392574     59             9              31           
+      4800   515.27755     -8512.0343      0.90392574     59             9              33           
+      5000   558.51131     -9671.4191      0.90392574     62             9              35           
+      5200   545.03934     -32148.988      0.90392574     63             9              38           
+      5400   558.18928     -9907.8916      0.90392574     63             9              40           
+      5600   521.74025     -21315.782      0.90392574     64             9              41           
+      5800   540.37206     -8500.8459      0.90392574     64             9              41           
+      6000   528.072       -7776.5747      0.90392574     65             9              41           
+      6200   535.61052     -10640.215      0.90392574     66             10             41           
+      6400   544.75914     -10717.56       0.90392574     66             10             43           
+      6600   542.95809     -7916.1059      0.90392574     66             10             44           
+      6800   519.62862     -10156.77       0.90392574     68             10             45           
+      7000   528.10761     -6727.5517      0.90392574     68             11             45           
+      7200   531.69302     -232445.15      0.90392574     68             11             47           
+      7400   530.80928     -6739.0334      0.90392574     69             11             48           
+      7600   541.26953     -108399.77      0.90392574     70             11             50           
+      7800   548.79007     -5069.4185      0.90392574     70             12             53           
+      8000   522.42895     -9289.5593      0.90392574     70             13             53           
+      8200   530.10639     -7555.6587      0.90392574     70             13             53           
+      8400   524.52973     -9153.6522      0.90392574     71             13             53           
+      8600   550.33526     -6175.4442      0.90392574     71             13             55           
+      8800   547.84598     -10956.544      0.90392574     71             14             57           
+      9000   534.15405     -46247.822      0.90392574     71             14             58           
+      9200   536.83635     -9421.4537      0.90392574     72             14             58           
+      9400   523.6039      -8477.8478      0.90392574     72             14             58           
+      9600   537.72805     -10235.295      0.90392574     72             14             58           
+      9800   516.21896     -11061.079      0.90392574     72             14             58           
+     10000   529.93443     -12635.931      0.90392574     72             14             59           
+     10200   541.50939     -10973.929      0.90392574     72             14             59           
+     10400   524.16278     -9602.6372      0.90392574     72             14             59           
+     10600   540.16629     -8288.024       0.90392574     72             14             59           
+     10800   530.66566     -9782.1523      0.90392574     72             14             59           
+     11000   527.96502     -10588.225      0.90392574     72             15             59           
+     11200   530.63715     -19810.063      0.90392574     72             15             60           
+     11400   533.02088     -9947.762       0.90392574     72             15             60           
+     11600   529.3941      -11068.775      0.90392574     72             15             60           
+     11800   536.00151     -11629.701      0.90392574     72             16             60           
+     12000   536.30137     -11486.566      0.90392574     72             16             60           
+     12200   533.14801     -10713.234      0.90392574     72             16             61           
+     12400   516.40964     -10564.852      0.90392574     72             16             61           
+     12600   527.90965     -10521.483      0.90392574     73             16             61           
+     12800   526.34259     -12497.137      0.90392574     74             16             61           
+     13000   534.18261     -8483.545       0.90392574     74             16             61           
+     13200   535.89384     -11192.901      0.90392574     74             16             61           
+     13400   526.34442     -13106.539      0.90392574     74             16             61           
+     13600   536.31063     -10419.806      0.90392574     74             16             61           
+     13800   521.35707     -9107.9695      0.90392574     74             16             61           
+     14000   538.38656     -14266.2        0.90392574     74             16             61           
+     14200   556.00209     -11484.311      0.90392574     74             16             61           
+     14400   541.37614     -10771.861      0.90392574     74             16             61           
+     14600   519.74952     -11746.169      0.90392574     74             16             61           
+     14800   530.55825     -11621.894      0.90392574     74             16             61           
+     15000   531.99353     -8715.2574      0.90392574     74             16             61           
+     15200   515.79342     -11101.103      0.90392574     75             16             61           
+     15400   546.7363      -11815.64       0.90392574     75             17             61           
+     15600   524.82822     -9808.8083      0.90392574     75             18             61           
+     15800   539.43533     -10876.7        0.90392574     75             18             61           
+     16000   547.12715     -11262.083      0.90392574     75             18             61           
+     16200   519.59804     -10611.36       0.90392574     75             18             61           
+     16400   538.0528      -167762.59      0.90392574     76             19             62           
+     16600   534.6253      -8825.1452      0.90392574     76             19             62           
+     16800   534.46142     -12301.249      0.90392574     77             19             62           
+     17000   531.89541     -12005.079      0.90392574     77             19             63           
+     17200   528.64925     -10210.07       0.90392574     77             19             63           
+     17400   535.37649     -12439.582      0.90392574     77             19             63           
+     17600   523.56778     -12495.187      0.90392574     77             19             63           
+     17800   527.63075     -11816.49       0.90392574     77             19             63           
+     18000   540.1356      -11192.973      0.90392574     77             19             64           
+     18200   529.97148     -9329.2192      0.90392574     77             19             64           
+     18400   527.69083     -9647.7731      0.90392574     77             19             64           
+     18600   547.32863     -11473.915      0.90392574     77             19             64           
+     18800   517.27495     -9670.5679      0.90392574     78             19             64           
+     19000   541.31174     -10369.214      0.90392574     78             19             64           
+     19200   531.36308     -11509.63       0.90392574     79             19             64           
+     19400   522.48223     -10662.614      0.90392574     79             19             64           
+     19600   537.17859     -10736.481      0.90392574     79             19             64           
+     19800   536.16305     -10761.449      0.90392574     79             19             64           
+     20000   528.52344     -10849.428      0.90392574     79             19             64           
+     20200   522.14346     -9741.7651      0.90392574     79             19             64           
+     20400   532.62997     -10037.339      0.90392574     79             19             64           
+     20600   532.64726     -13730.174      0.90392574     79             19             64           
+     20800   521.23886     -11563.726      0.90392574     79             19             64           
+     21000   535.99931     -12561.707      0.90392574     79             19             64           
+     21200   545.99389     -12523.644      0.90392574     79             19             64           
+     21400   529.24877     -12634.771      0.90392574     79             19             64           
+     21600   529.43179     -12949.56       0.90392574     79             19             64           
+     21800   535.87685     -13129.434      0.90392574     80             19             64           
+     22000   521.44105     -11145.24       0.90392574     80             19             66           
+     22200   521.11756     -10549.212      0.90392574     80             19             66           
+     22400   532.84616     -10965.022      0.90392574     80             19             66           
+     22600   524.92043     -11277.756      0.90392574     80             19             66           
+     22800   528.38993     -12565.863      0.90392574     80             19             66           
+     23000   528.29869     -11866.514      0.90392574     80             19             66           
+     23200   536.47787     -11087.902      0.90392574     80             19             66           
+     23400   530.41947     -10336.408      0.90392574     80             19             66           
+     23600   524.40428     -11018.73       0.90392574     80             19             67           
+     23800   521.68591     -11970.372      0.90392574     80             20             67           
+     24000   542.51        -12060.687      0.90392574     80             20             67           
+     24200   534.97257     -11606.798      0.90392574     80             20             67           
+     24400   523.25941     -11884.403      0.90392574     80             20             67           
+     24600   529.56491     -9906.9858      0.90392574     80             20             68           
+     24800   531.09179     -10875.089      0.90392574     80             20             68           
+     25000   534.71351     -13129.427      0.90392574     80             20             68           
+Loop time of 194.185 on 8 procs for 25000 steps with 3392 atoms
+
+Performance: 11.123 ns/day, 2.158 hours/ns, 128.743 timesteps/s, 436.697 katom-step/s
+723.7% CPU use with 1 MPI tasks x 8 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 25.778     | 25.778     | 25.778     |   0.0 | 13.27
+Bond    | 17.649     | 17.649     | 17.649     |   0.0 |  9.09
+Kspace  | 21.063     | 21.063     | 21.063     |   0.0 | 10.85
+Neigh   | 7.7092     | 7.7092     | 7.7092     |   0.0 |  3.97
+Comm    | 1.3579     | 1.3579     | 1.3579     |   0.0 |  0.70
+Output  | 24.341     | 24.341     | 24.341     |   0.0 | 12.54
+Modify  | 96.109     | 96.109     | 96.109     |   0.0 | 49.49
+Other   |            | 0.1777     |            |       |  0.09
+
+Nlocal:           3392 ave        3392 max        3392 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          12245 ave       12245 max       12245 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         654340 ave      654340 max      654340 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 654340
+Ave neighs/atom = 192.90684
+Ave special neighs/atom = 10.575472
+Neighbor list builds = 1791
+Dangerous builds = 0

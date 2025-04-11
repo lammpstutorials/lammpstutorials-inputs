@@ -1,0 +1,57 @@
+# Python script (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+variable sigma equal 3.405
+variable epsilon equal 0.238
+variable U0 equal 10*${epsilon}
+variable dlt equal 1.0
+variable x0 equal 10.0
+variable k equal 0.5
+
+units real
+atom_style atomic
+pair_style lj/cut 3.822
+pair_modify shift yes
+boundary p p p
+
+region myreg block -50 50 -15 15 -50 50
+create_box 2 myreg
+create_atoms 2 single 0 0 0
+create_atoms 1 random 199 34134 myreg overlap 3 maxtry 50
+
+mass * 39.948
+pair_coeff * * ${epsilon} ${sigma}
+group topull type 2
+
+variable U atom ${U0}*atan((x+${x0})/${dlt})-${U0}*atan((x-${x0})/${dlt})
+variable F atom ${U0}/((x-${x0})^2/${dlt}^2+1)/${dlt}-${U0}/((x+${x0})^2/${dlt}^2+1)/${dlt}
+fix myadf all addforce v_F 0.0 0.0 energy v_U
+
+fix mynve all nve
+fix mylgv all langevin 119.8 119.8 500 30917
+
+thermo 5000
+
+dump viz all image 50000 myimage-*.ppm type type &
+    shiny 0.1 box yes 0.01 view 180 90 zoom 6 &
+    size 1600 500 fsaa yes
+dump_modify viz backcolor white acolor 1 cyan &
+    acolor 2 red adiam 1 3 adiam 2 3 boxcolor black
+
+timestep 2.0
+run 50000
+
+variable a loop 15
+label loop
+variable xdes equal 4*${a}-32
+variable xave equal xcm(topull,x)
+fix mytth topull spring tether ${k} ${xdes} 0 0 0
+run 20000
+
+fix myat1 all ave/time 10 10 100 v_xave v_xdes file umbrella-sampling.${a}.dat
+run 200000
+unfix myat1
+next a
+jump SELF loop

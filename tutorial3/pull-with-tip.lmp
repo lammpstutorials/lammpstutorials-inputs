@@ -1,0 +1,35 @@
+# LAMMPS input file (License CC BY 4.0)
+# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
+# The DOI will be added upon publication
+# Find more on GitHub: https://github.com/lammpstutorials
+
+kspace_style pppm 1e-5
+read_restart merge.restart
+
+group ends type OAlc
+variable xcm equal xcm(ends,x)
+variable oxies atom type==label2type(atom,OAlc)
+variable end1 atom v_oxies*(x>v_xcm)
+variable end2 atom v_oxies*(x<v_xcm)
+group topull1 variable end1
+group topull2 variable end2
+
+dump mydmp all atom 1000 pull.lammpstrj
+
+timestep 1.0
+fix mynvt all nvt temp 300 300 100
+fix myrct PEG recenter 0 0 0 shift all
+
+compute rgyr PEG gyration
+compute prop PEG property/local dtype
+compute dphi PEG dihedral/local phi
+
+thermo_style custom step temp etotal c_rgyr
+thermo 250
+
+run 15000
+
+fix myaf1 topull1 addforce 10 0 0
+fix myaf2 topull2 addforce -10 0 0
+
+run 15000

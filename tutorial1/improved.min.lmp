@@ -1,6 +1,7 @@
-# LAMMPS Input File (License CC BY 4.0)
-# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
-# The DOI will be added upon publication
+# LAMMPS Input File
+# Licensed under CC BY 4.0
+# By Simon Gravelle, Cecilia M. S. Alvares, Jacob R. Gissinger, and Axel Kohlmeyer
+# Please cite doi.org/10.48550/arXiv.2503.14020
 # Find more on GitHub: https://github.com/lammpstutorials
 
 # 1) Initialization
@@ -25,7 +26,7 @@ pair_style lj/cut 4.0
 pair_coeff 1 1 1.0 1.0
 pair_coeff 2 2 0.5 3.0
 
-# 4) Visualization
+# 4) Monitoring
 thermo 10
 thermo_style custom step etotal press
 

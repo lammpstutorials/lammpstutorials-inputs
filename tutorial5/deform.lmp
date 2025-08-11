@@ -1,6 +1,7 @@
-# Python script (License CC BY 4.0)
-# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
-# The DOI will be added upon publication
+# LAMMPS Input File
+# Licensed under CC BY 4.0
+# By Simon Gravelle, Cecilia M. S. Alvares, Jacob R. Gissinger, and Axel Kohlmeyer
+# Please cite doi.org/10.48550/arXiv.2503.14020
 # Find more on GitHub: https://github.com/lammpstutorials
 
 units real
@@ -9,7 +10,7 @@ atom_style full
 read_data relax.data
 
 pair_style reaxff NULL safezone 3.0 mincap 150
-pair_coeff * * reaxCHOFe.inc Si O
+pair_coeff * * ffield.reax.CHOFe Si O
 fix myqeq all qeq/reaxff 1 0.0 10.0 1.0e-6 reaxff maxiter 400
 
 group grpSi type Si
@@ -38,4 +39,4 @@ fix mydef all deform 1 x erate 5e-5
 
 run 25000
 
-write_data deform.data
+write_data deform.data nofix

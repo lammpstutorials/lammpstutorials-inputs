@@ -1,6 +1,7 @@
-# LAMMPS input file (License CC BY 4.0)
-# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
-# The DOI will be added upon publication
+# LAMMPS Input File
+# Licensed under CC BY 4.0
+# By Simon Gravelle, Cecilia M. S. Alvares, Jacob R. Gissinger, and Axel Kohlmeyer
+# Please cite doi.org/10.48550/arXiv.2503.14020
 # Find more on GitHub: https://github.com/lammpstutorials
 
 kspace_style pppm 1e-5
@@ -31,17 +32,12 @@ fix mynvt all nvt temp 300 300 100
 fix myrct PEG recenter 0 0 0 shift all
 
 compute rgyr PEG gyration
-compute prop PEG property/local dtype
 compute dphi PEG dihedral/local phi
-#compute mphi PEG reduce ave c_dphi inputs local
 
-thermo_style custom step temp etotal c_rgyr # c_mphi
+thermo_style custom step temp etotal c_rgyr
 thermo 250
 
-dump mydmp all local 50 pull.dat index c_dphi c_prop
-
-# S.G.: a histogram would be ok if one could select only dihedral 2 
-# fix myhisto all ave/histo 100 120 15000 0 180 90 c_dphi file pull.dat ave running mode vector
+dump mydmp all local 50 pull.dat index c_dphi
 
 run 15000
 

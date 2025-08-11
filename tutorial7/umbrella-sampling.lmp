@@ -1,6 +1,7 @@
-# Python script (License CC BY 4.0)
-# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer  
-# The DOI will be added upon publication
+# LAMMPS Input File
+# Licensed under CC BY 4.0
+# By Simon Gravelle, Cecilia M. S. Alvares, Jacob R. Gissinger, and Axel Kohlmeyer
+# Please cite doi.org/10.48550/arXiv.2503.14020
 # Find more on GitHub: https://github.com/lammpstutorials
 
 variable sigma equal 3.405
@@ -12,7 +13,7 @@ variable k equal 0.5
 
 units real
 atom_style atomic
-pair_style lj/cut 3.822
+pair_style lj/cut $(2^(1/6)*v_sigma)
 pair_modify shift yes
 boundary p p p
 
@@ -34,7 +35,7 @@ fix mylgv all langevin 119.8 119.8 500 30917
 
 thermo 5000
 
-dump viz all image 50000 myimage-*.ppm type type &
+dump viz all image 5000 myimage-*.ppm type type &
     shiny 0.1 box yes 0.01 view 180 90 zoom 6 &
     size 1600 500 fsaa yes
 dump_modify viz backcolor white acolor 1 cyan &

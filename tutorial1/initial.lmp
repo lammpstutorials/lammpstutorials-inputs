@@ -1,6 +1,7 @@
-# LAMMPS Input File (License CC BY 4.0)
-# By Simon Gravelle, Jacob R. Gissinger, and Axel Kohlmeyer
-# The DOI will be added upon publication
+# LAMMPS Input File
+# Licensed under CC BY 4.0
+# By Simon Gravelle, Cecilia M. S. Alvares, Jacob R. Gissinger, and Axel Kohlmeyer
+# Please cite doi.org/10.48550/arXiv.2503.14020
 # Find more on GitHub: https://github.com/lammpstutorials
 
 # PART A - ENERGY MINIMIZATION
@@ -9,9 +10,8 @@ units lj
 dimension 3
 atom_style atomic
 boundary p p p
-# 2) System definition
 
-# 2) System deﬁnition
+# 2) System definition
 region simbox block -20 20 -20 20 -20 20
 create_box 2 simbox
 create_atoms 1 random 1500 34134 simbox overlap 0.3
@@ -24,7 +24,7 @@ pair_style lj/cut 4.0
 pair_coeff 1 1 1.0 1.0
 pair_coeff 2 2 0.5 3.0
 
-# 4) Visualization
+# 4) Monitoring
 thermo 10
 thermo_style custom step etotal press
 
@@ -32,7 +32,7 @@ thermo_style custom step etotal press
 minimize 1.0e-6 1.0e-6 1000 10000
 
 # PART B - MOLECULAR DYNAMICS
-# 4) Visualization
+# 4) Monitoring
 thermo 50
 thermo_style custom step temp etotal pe ke press
 dump viz all image 100 myimage-*.ppm type type &
